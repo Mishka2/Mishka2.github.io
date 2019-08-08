@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url("Images/beach.jpg");
+    background-color: rgb(201, 76, 76);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
