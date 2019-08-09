@@ -18,8 +18,9 @@
 }
 
 #second_nav_items {
+  padding-left: 10%;
   /* background-color: rgb(0,0,0); */
-  width: 73%;
+  width: 60%;
   display: -webkit-flex; /* Safari */
   -webkit-align-items: center; /* Safari 7.0+ */
   display: flex;
@@ -45,7 +46,9 @@
   /* background-color: rgb(63, 61, 85); */
   /* background-color: rgb(215, 103, 0); */
   /* background-color: rgba(205, 93, 0, .5); */
-  background-color: rgba(0, 0, 0, .6);
+  /* background-color: rgb(135, 23, 0, .6); */
+  /* background-color: rgb(97, 36, 1, .9); */
+    background-color: rgb(109, 59, 0, .95)
 }
 
 
@@ -57,8 +60,11 @@ body {
 
     /* --brown: rgb(90, 28, 0); */
     /* --brown: rgb(205, 93, 0); */
-    --brown: rgb(185, 73, 0);
-    background-color: var(--brown);
+    --brown: rgb(119, 49, 0);
+    /* background-color: var(--brown); */
+    /* , rgb(135, 23, 0) */
+    /* background-image: linear-gradient(rgb(215, 113, 30), var(--brown)); */
+    background-image: linear-gradient(rgb(215, 113, 30), rgb(109, 59, 0));
     /* background-image: linear-gradient(rgb(205, 93, 0),var(--brown),var(--brown), var(--brown),var(--brown), var(--brown), var(--brown), var(--brown), var(--brown), rgb(205, 93, 0)); */
     /* background-image: linear-gradient(black, black,black , black, black, black, rgb(15, 10, 0), rgb(205, 93, 0)); */
     background-attachment: fixed;
@@ -70,7 +76,7 @@ body {
 
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: white;
     /* color: rgb(251, 153, 51); */
     padding-right: 4%;
     padding-left: 4%;
@@ -154,7 +160,7 @@ margin-left: 35%;
 
 #link_home2:hover, #link_resume2:hover, #link_current2:hover, #link_projects2:hover {
   /* color: rgb(255, 240, 180); */
-  color: rgb(90, 28, 0);
+  color: rgb(235, 133, 50);
   /* color: white; */
 }
 
@@ -166,9 +172,94 @@ margin-left: 35%;
 
 
 #menu_links {
-  padding-top: 1000px;
+  padding-top: 10%;
 }
 
+#PROJECTS {
+  height: auto;
+}
+
+
+.item1 {
+  grid-area: header;
+}
+#project1{
+  padding-top: 40%;
+  padding-bottom: 80%;
+  background-repeat: no-repeat;
+  background-image: url("Images/rotating_spoon.png");
+  background-size: cover;
+}
+#project1_link{
+  padding-top: 40%;
+  padding-bottom: 86%;
+  padding-left: 45%;
+  padding-right: 46%;
+  color: transparent;
+}
+#project1_link:hover{
+  background-color: rgba(0,0,0,.3);
+}
+
+#project1_description{
+  
+}
+
+
+.item2 {
+  grid-area: menu;
+}
+#project2{
+  padding-top: 20%;
+  padding-bottom: 40%;
+  background-image: url("Images/watch_wiring.png");
+  background-size: cover;
+}
+
+.item3 {
+  grid-area: main;
+}
+#project3{
+  padding-top: 25%;
+  padding-bottom: 35%;
+  background-repeat: no-repeat;
+  background-image: url("Images/rpal_logo.png");
+  background-size: cover;
+}
+.item4 {
+  grid-area: right;
+}
+#project4{
+  padding-top: 60%;
+  padding-bottom: 70%;
+  background-repeat: no-repeat;
+  background-image: url("Images/python_projects.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header main main'
+    'header header main main'
+    'header header right right'
+    'menu   menu   right right'
+    'menu   menu   right right';
+  grid-gap: 35px;
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+}
 
 
 a{
