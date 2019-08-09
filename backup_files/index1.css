@@ -1,49 +1,18 @@
 @charset "UTF-8";
 
-#main_nav {
+#main {
   width: 85%;
   display: -webkit-flex; /* Safari */
   -webkit-align-items: center; /* Safari 7.0+ */
   display: flex;
   align-items: center;
   padding-top: 10px;
-  position: absolute;
 }
 
-#main_nav div {
+#main div {
    -webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
    /* padding-top: 30px; */
-}
-
-#second_nav_items {
-  /* background-color: rgb(0,0,0); */
-  width: 73%;
-  display: -webkit-flex; /* Safari */
-  -webkit-align-items: center; /* Safari 7.0+ */
-  display: flex;
-  align-items: center;
-  top: 0;
-  visibility: hidden;
-  width: fill;
-  position: fixed;
-}
-
-#second_nav_items div {
-  -webkit-flex: 1; /* Safari 6.1+ */
-  flex: 1;
-}
-
-#nav2_background{
-  top:0;
-  height: 40px;
-  color: transparent;
-  position: fixed;
-  width: 100%;
-  visibility: hidden;
-  /* background-color: rgb(63, 61, 85); */
-  /* background-color: rgb(215, 103, 0); */
-  background-color: rgb(205, 93, 0);
 }
 
 
@@ -52,11 +21,11 @@ body {
     /* background-color: rgb(23, 21, 37); */
     /* background-color: rgb(102, 48, 16); */
     --brown: rgb(90, 28, 0);
-    background-image: linear-gradient(rgb(205, 93, 0),var(--brown),var(--brown), var(--brown),var(--brown), var(--brown), var(--brown), var(--brown), var(--brown), rgb(205, 93, 0));
+    background-image: linear-gradient(var(--brown),var(--brown),var(--brown), var(--brown), var(--brown), var(--brown), rgb(205, 93, 0));
     /* background-image: linear-gradient(black, black,black , black, black, black, rgb(15, 10, 0), rgb(205, 93, 0)); */
     background-attachment: fixed;
     margin:0;
-    top:0;
+    top = 0;
 
 
 }
@@ -78,45 +47,29 @@ h1 {
 
 }
 
-#nav1_link1 {
+#first_link {
   margin-left: 15%;
 }
 
-#navbars{
-  position: relative;
 
-}
-
-#first_background {
-  padding-bottom: 60%;
+#first_section {
+  padding-bottom: 50%;
   background-size: 100% 75%;
   background-image: url("Images/beach.jpg");
   background-repeat: no-repeat;
-  position: relative;
 }
 
-#first_background-content{
+#first_section-content{
   position: absolute;
   bottom: 0;
 }
 
 
-#nav1_link1, #nav1_link2, #nav1_link3, #nav1_link4 {
+#link_div {
 	text-align: center;
   padding-top: 15px;
 
 	}
-
-#nav2_link1, #nav2_link2, #nav2_link3, #nav2_link4 {
-	text-align: center;
-  padding-top: 10px;
-
-
-	}
-
-#nav2_link1{
-margin-left: 35%;
-}
 
 #spread_link {
   margin-left: 2%;
@@ -126,20 +79,9 @@ margin-left: 35%;
 #link_home, #link_resume, #link_current, #link_projects {
 
 	text-align: center;
-  /* color: rgb(215, 103, 0); */
-  color: rgb(255, 143, 40);
+  color: rgb(215, 103, 0);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-  font-weight: lighter;
-
-}
-
-#link_home2, #link_resume2, #link_current2, #link_projects2 {
-
-	text-align: center;
-  color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
   font-weight: lighter;
 
 }
@@ -150,8 +92,10 @@ margin-left: 35%;
   color: rgb(255, 255, 255);
 }
 
-#menu_links {
-  padding-top: 1000px;
+#projects {
+  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top = 0;
 }
 
 

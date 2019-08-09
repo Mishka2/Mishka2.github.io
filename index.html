@@ -13,22 +13,95 @@
 
 	<body>
 
-    <div id="main">
-		<h1 >MICHELLE LOVEN</h1>
+    <div id="first_background">
+
+      <div id = "navbars">
+
+        <div id="main_nav">
+
+              <div id = "nav1_link1">
+            		<a id="link_home" href="#first_section">HOME</a>
+              </div>
+
+              <div id="nav1_link2">
+                    <a id="link_projects" href="#PROJECTS">PROJECTS</a>
+          		</div>
+
+          		<h1>MICHELLE LOVEN</h1>
+
+              <div id="nav1_link3">
+                		<a id="link_resume" href="#RESUME">RESUME</a>
+          		</div>
+
+              <div id="nav1_link4">
+            		<a id="link_current" href="#CURRENT">CURRENT</a>
+          		</div>
 
 
-		<div id="link">
-		<a id="one" href="personal.html">RESUME</a>
-		</div>
+        </div>
+          <div id="nav2_background">
+            <p>Hello</p>
+          </div>
 
-		<div id="link">
-		<a id="two" href="academics.html">PROJECTS</a>
-		</div>
+          <div id="second_nav_items">
+
+              <div id = "nav2_link1">
+                <a id="link_home2" href="#main_nav">HOME</a>
+              </div>
+
+              <div id="nav2_link2">
+                    <a id="link_projects2" href="#PROJECTS">PROJECTS</a>
+              </div>
+
+              <div id="nav2_link3">
+                    <a id="link_resume2" href="#RESUME">RESUME</a>
+              </div>
+
+              <div id="nav2_link4">
+                <a id="link_current2" href="#CURRENT">CURRENT</a>
+              </div>
+
+
+
+          </div>
+
+
+
+      </div>
+
+   </div>
+
+
+
+
+</body>
+  <div id="menu_links">
+      <a id="PROJECTS">Projects Link</a>
+      <a id="RESUME">Projects Link</a>
+      <a id="CURRENT">Projects Link</a>
     </div>
-
-    </div>
-
-
-	</body>
 
 </html>
+
+
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop()> 580) {
+                second_nav_items.style.visibility='visible'
+                nav2_background.style.visibility='visible'
+                // navbars.style.backgroundColor = "#AA0000";
+                // $('#second_nav').fadeIn(500)
+
+            } else {
+                second_nav_items.style.visibility='hidden'
+                nav2_background.style.visibility='hidden'
+            }
+        });
+    });
+})(jQuery);
+</script>
