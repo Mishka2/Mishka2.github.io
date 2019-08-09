@@ -5,13 +5,14 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Michelle Loven's Website</title>
-
       <link rel="stylesheet" type="text/css" href="index.css">
-
 		</head>
 
 
+
 	<body>
+
+
 
     <div id="first_background">
 
@@ -25,6 +26,7 @@
 
               <div id="nav1_link2">
                     <a id="link_projects" href="#PROJECTS">PROJECTS</a>
+                    <!-- <a id="link_projects" href="google.com">PROJECTS</a> -->
           		</div>
 
           		<h1>MICHELLE LOVEN</h1>
@@ -75,6 +77,7 @@
 
 
 </body>
+
   <div id="menu_links">
       <a id="PROJECTS">Projects Link</a>
       <a id="RESUME">Projects Link</a>
@@ -94,9 +97,7 @@
             if ($(this).scrollTop()> 580) {
                 second_nav_items.style.visibility='visible'
                 nav2_background.style.visibility='visible'
-                // navbars.style.backgroundColor = "#AA0000";
-                // $('#second_nav').fadeIn(500)
-
+                // $('second_nav_items').css('color': 'red')
             } else {
                 second_nav_items.style.visibility='hidden'
                 nav2_background.style.visibility='hidden'
@@ -104,4 +105,11 @@
         });
     });
 })(jQuery);
+
+
+// (function turnRed() {
+// var myPara = document.getElementById("link_home2");
+// myPara.style.color = "red";
+// })(jQuery);
+
 </script>
