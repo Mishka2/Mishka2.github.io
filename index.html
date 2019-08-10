@@ -43,33 +43,30 @@
 
 
         </div>
+
           <div id="nav2_background">
-            <p>Hello</p>
-          </div>
 
-          <div id="second_nav_items">
+                <div id="second_nav_items">
 
-              <div id = "nav2_link1">
-                <a id="link_home2" href="#main_nav">HOME</a>
-              </div>
+                    <div id = "nav2_link1">
+                      <a id="link_home2" href="#main_nav">HOME</a>
+                    </div>
 
-              <div id="nav2_link2">
-                    <a id="link_projects2" href="#PROJECTS">PROJECTS</a>
-              </div>
+                    <div id="nav2_link2">
+                          <a id="link_projects2" href="#PROJECTS">PROJECTS</a>
+                    </div>
 
-              <div id="nav2_link3">
-                    <a id="link_resume2" href="#RESUME">RESUME</a>
-              </div>
+                    <div id="nav2_link3">
+                          <a id="link_resume2" href="#RESUME">RESUME</a>
+                    </div>
 
-              <div id="nav2_link4">
-                <a id="link_current2" href="#CURRENT">CURRENT</a>
-              </div>
+                    <div id="nav2_link4">
+                      <a id="link_current2" href="#CURRENT">CURRENT</a>
+                    </div>
 
-
+                </div>
 
           </div>
-
-
 
       </div>
 
@@ -87,36 +84,72 @@
   <div id="menu_links">
       <div id="PROJECTS">
         <div class="grid-container">
-           <div class="item1">
-              <div id= "project1">
-                  <a id="project1_link" href="#main_nav">link</a>
-                  <div id = "project1_description">
-                      Hello
-                  </div>
-                </div>
-           </div>
-           <div class="item2">
-               <div id= "project2">
+           <!-- <div class="item1"> -->
 
-                 </div>
-           </div>
-           <div class="item3">
-             <div id= "project3">
-               </div>
-           </div>
-           <div class="item4">
-               <div id= "project4">
-                 </div>
+
+                <!-- <div id= "project1">
+                    <a id="project1_link" href="#main_nav">link</a>
+                    <div id = "project1_description">
+                        Hello
+                    </div> -->
+
+
+                    <div class="project1">
+                          <img src="Images/rotating_spoon.png" alt="project1" class="image">
+                          <div class="middle">
+                                <div class="text">SELF-BALANCING SPOON</div>
+                          </div>
+                    </div>
+
+                    <div class="project2">
+                          <img src="Images/watch_wiring.png" alt="project2" class="image">
+                          <div class="middle">
+                                <div class="text">VIBRATING WATCH</div>
+                          </div>
+                    </div>
+
+
+                    <div class="project3">
+                          <img src="Images/rpal_logo.png" alt="project3" class="image">
+                          <div class="middle">
+                                <div class="text">AUTOMATION</div>
+                          </div>
+                    </div>
+
+                    <div class="project4">
+                          <img src="Images/python_projects.png" alt="project4" class="image">
+                          <div class="middle">
+                                <div class="text">PYTHON GAMES</div>
+                          </div>
+                    </div>
+
+
+
 
            </div>
          </div>
-        </div>
-      <div id="RESUME">
-        </div>
-      <div id="CURRENT">
+
+
+         <div id="RESUME">
+           </div>
+         <div id="CURRENT">
+           </div>
+
+      </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <img src="Images/rotating_spoon.png" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">John Doe</div>
         </div>
     </div>
-
 
 
 
@@ -132,7 +165,7 @@
 (function($) {
     $(document).ready(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop()> 580) {
+            if ($(this).scrollTop()> 560) {
                 second_nav_items.style.visibility='visible'
                 nav2_background.style.visibility='visible'
                 // $('second_nav_items').css('color': 'red')

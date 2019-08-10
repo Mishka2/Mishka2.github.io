@@ -36,20 +36,7 @@
   flex: 1;
 }
 
-#nav2_background{
-  top:0;
-  height: 40px;
-  color: transparent;
-  position: fixed;
-  width: 100%;
-  visibility: hidden;
-  /* background-color: rgb(63, 61, 85); */
-  /* background-color: rgb(215, 103, 0); */
-  /* background-color: rgba(205, 93, 0, .5); */
-  /* background-color: rgb(135, 23, 0, .6); */
-  /* background-color: rgb(97, 36, 1, .9); */
-    background-color: rgb(109, 59, 0, .95)
-}
+
 
 
 
@@ -100,7 +87,7 @@ h1 {
 }
 
 #first_background {
-  padding-bottom: 43%;
+  padding-bottom:40%;
   background-size: 100% 100%;
   background-image: url("Images/beach.jpg");
   background-repeat: no-repeat;
@@ -148,15 +135,7 @@ margin-left: 35%;
 
 }
 
-#link_home2, #link_resume2, #link_current2, #link_projects2 {
 
-	text-align: center;
-  color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
-  font-weight: lighter;
-
-}
 
 #link_home2:hover, #link_resume2:hover, #link_current2:hover, #link_projects2:hover {
   /* color: rgb(255, 240, 180); */
@@ -179,73 +158,20 @@ margin-left: 35%;
   height: auto;
 }
 
+.project1 { grid-area: one; }
+.project2 { grid-area: two; }
+.project3 { grid-area: three; }
+.project4 { grid-area: four; }
 
-.item1 {
-  grid-area: header;
-}
-#project1{
-  padding-top: 40%;
-  padding-bottom: 80%;
-  background-repeat: no-repeat;
-  background-image: url("Images/rotating_spoon.png");
-  background-size: cover;
-}
-#project1_link{
-  padding-top: 40%;
-  padding-bottom: 86%;
-  padding-left: 45%;
-  padding-right: 46%;
-  color: transparent;
-}
-#project1_link:hover{
-  background-color: rgba(0,0,0,.3);
-}
-
-#project1_description{
-  
-}
-
-
-.item2 {
-  grid-area: menu;
-}
-#project2{
-  padding-top: 20%;
-  padding-bottom: 40%;
-  background-image: url("Images/watch_wiring.png");
-  background-size: cover;
-}
-
-.item3 {
-  grid-area: main;
-}
-#project3{
-  padding-top: 25%;
-  padding-bottom: 35%;
-  background-repeat: no-repeat;
-  background-image: url("Images/rpal_logo.png");
-  background-size: cover;
-}
-.item4 {
-  grid-area: right;
-}
-#project4{
-  padding-top: 60%;
-  padding-bottom: 70%;
-  background-repeat: no-repeat;
-  background-image: url("Images/python_projects.png");
-  background-size: cover;
-  background-position: center;
-}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header main main'
-    'header header main main'
-    'header header right right'
-    'menu   menu   right right'
-    'menu   menu   right right';
+    'one one       two two'
+    'one one       two two'
+    'one one       four four'
+    'three three   four four'
+    'three three   four four';
   grid-gap: 35px;
   /* background-color: #2196F3; */
   /* padding: 10px; */
@@ -255,10 +181,92 @@ margin-left: 35%;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(89, 39, 0);
   text-align: center;
   /* padding: 20px 0; */
   font-size: 30px;
+}
+
+
+.project1, .project2, .project3, .project4 {
+  position: relative;
+  width: 100%;
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project1:hover .image, .project2:hover .image, .project3:hover .image , .project4:hover .image  {
+  opacity: 0.2;
+
+}
+
+
+.project1:hover .middle, .project2:hover .middle, .project3:hover .middle, .project4:hover .middle {
+  opacity: 1;
+
+}
+
+.text {
+  /* background-color:rgb(89, 39, 0); */
+  /* background-color:black; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* color: rgb(255, 213, 130); */
+  color: white;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+#nav2_background{
+  top:0;
+  height: 40px;
+  color: transparent;
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+  z-index: 1;
+
+  /* background-color: rgb(63, 61, 85); */
+  /* background-color: rgb(215, 103, 0); */
+  /* background-color: rgba(205, 93, 0, .5); */
+  /* background-color: rgb(135, 23, 0, .6); */
+  /* background-color: rgb(97, 36, 1, .9); */
+    background-color: rgb(89, 39, 0, .95)
+}
+
+#link_home2, #link_resume2, #link_current2, #link_projects2 {
+
+	text-align: center;
+  color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+  font-weight: lighter;
+  position: relative;
+  z-index: 2;
+
 }
 
 
