@@ -57,7 +57,8 @@ body{
 
 #home_link:hover, #project_link:hover, #res_link:hover, #about_link:hover{
   /* color: rgb(0,102,204); */
-  color: rgb(102,122,255);
+  /* color: rgb(102,122,255); */
+  color: rgb(112,112,225);
   text-decoration: none;
 }
 
@@ -115,12 +116,7 @@ body{
 
 
 
-#resume_background{
-  padding-bottom: 50%;
-  width: 100%;
-  color: transparent;
-  background-color: white;
-}
+
 
 #contact_background{
   padding-bottom: 10%;
@@ -135,7 +131,7 @@ body{
 
 
 #about_background{
-  padding-bottom: 40%;
+  padding-bottom: 30%;
 
   width: 100%;
   color: transparent;
@@ -144,9 +140,6 @@ body{
 }
 
 
-#profile_pic, #profile_description{
-  color: black;
-}
 
 #profile_pic{
   background-image: url('Images/profile.png');
@@ -158,6 +151,7 @@ body{
 
 #profile_description{
   font-size: 180%;
+  color: rgb(100,100,100);
 }
 
 #about_contents{
@@ -206,20 +200,23 @@ body{
 .project2 { grid-area: two; }
 .project3 { grid-area: three; }
 .project4 { grid-area: four; }
+.project5 { grid-area: five; }
+.project6 { grid-area: six; }
 
 
 
 .grid-container {
+  width: 80%;
 
 
   display: grid;
   grid-template-areas:
-    'one one       two two'
-    'one one       two two'
-    'one one       four four'
-    'one one  four four'
-    'three three   four four'
-    'three three   four four';
+    'one one       two two      five five '
+    'one one       two two      five five '
+    'one one       four four    five five '
+    'one one       four four    five five '
+    'three three   four four    six six'
+    'three three   four four    six six';
   grid-gap: 35px;
 
 
@@ -229,16 +226,13 @@ body{
 }
 
 .grid-container > div {
-  /* background-color: rgb(89, 39, 0); */
-  background-color: rgb(10,0,104);
-  /* background-color: rgb(90,80,110); */
-  /* background-color: white; */
+  background-color: rgb(100,100,120);
   text-align: center;
   font-size: 30px;
 }
 
 
-.project1, .project2, .project3, .project4 {
+.project1, .project2, .project3, .project4, .project5, .project6 {
   position: relative;
 
 }
@@ -253,31 +247,120 @@ body{
 }
 
 .middle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(78,86,105, .7);
+  color: white;
+  font-size: 55%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  z-index: 100;
   transition: .5s ease;
   opacity: 0;
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
 }
 
 
-.project1:hover .image, .project2:hover .image, .project3:hover .image , .project4:hover .image  {
-  opacity: 0.3;
 
-}
-
-
-.project1:hover .middle, .project2:hover .middle, .project3:hover .middle, .project4:hover .middle {
+.project1:hover .middle, .project2:hover .middle, .project3:hover .middle, .project4:hover .middle, .project5:hover .middle, .project6:hover .middle {
   opacity: 1;
 
 }
 
 .text {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* color: rgb(10,0,104); */
   color: white;
   font-size: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#resume_background{
+  padding-bottom: 50%;
+  width: 100%;
+  color: transparent;
+  background-color: white;
+}
+
+
+
+.project1_resume { grid-area: one; }
+.project2_resume { grid-area: two; }
+
+
+
+.grid-container_resume {
+  width: 80%;
+  padding-top: 80%;
+
+
+  display: grid;
+  grid-template-areas:
+    'one two';
+  grid-gap: 35px;
+
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-container_resume > div {
+  background-color: rgb(100,100,120);
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.project1_resume, .project2_resume{
+  position: relative;
+  color:white;
+
+}
+
+.project1_resume{
+  width: 70%;
+}
+
+.image_resume {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_resume {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(78,86,105, .7);
+  color: white;
+  font-size: 55%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  z-index: 100;
+  transition: .5s ease;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.project1_resume:hover .middle_resume, .project2_resume:hover .middle_resume {
+  opacity: 1;
+
 }
