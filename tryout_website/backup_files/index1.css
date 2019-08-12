@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+#main {
+  width: 85%;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#main div {
+   -webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1;
+   /* padding-top: 30px; */
+}
+
+
+body {
+    /* background-color: rgb(7, 3, 0); */
+    /* background-color: rgb(23, 21, 37); */
+    /* background-color: rgb(102, 48, 16); */
+    --brown: rgb(90, 28, 0);
+    background-image: linear-gradient(var(--brown),var(--brown),var(--brown), var(--brown), var(--brown), var(--brown), rgb(205, 93, 0));
+    /* background-image: linear-gradient(black, black,black , black, black, black, rgb(15, 10, 0), rgb(205, 93, 0)); */
+    background-attachment: fixed;
+    margin:0;
+    top = 0;
+
+
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    /* color: rgb(251, 153, 51); */
+    padding-right: 4%;
+    padding-left: 4%;
+    /* color: rgb(255, 240, 180); */
+    /* color: rgb(183, 191, 217); */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 275%;
+
+
+
+}
+
+#first_link {
+  margin-left: 15%;
+}
+
+
+#first_section {
+  padding-bottom: 50%;
+  background-size: 100% 75%;
+  background-image: url("Images/beach.jpg");
+  background-repeat: no-repeat;
+}
+
+#first_section-content{
+  position: absolute;
+  bottom: 0;
+}
+
+
+#link_div {
+	text-align: center;
+  padding-top: 15px;
+
+	}
+
+#spread_link {
+  margin-left: 2%;
+  margin-right: 10%;
+}
+
+#link_home, #link_resume, #link_current, #link_projects {
+
+	text-align: center;
+  color: rgb(215, 103, 0);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+  font-weight: lighter;
+
+}
+
+
+#link_home:hover, #link_resume:hover, #link_current:hover, #link_projects:hover {
+  /* color: rgb(255, 240, 180); */
+  color: rgb(255, 255, 255);
+}
+
+#projects {
+  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top = 0;
+}
+
+
+a{
+	text-decoration: none;
+	}

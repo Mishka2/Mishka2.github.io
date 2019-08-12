@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+		<head>
+			<meta charset="UTF-8">
+			<title>Michelle Loven's Website</title>
+      <link rel="stylesheet" type="text/css" href="index.css">
+
+
+		</head>
+
+
+
+	<body>
+
+
+
+    <div id="first_background">
+
+      <div id = "navbars">
+
+        <div id="main_nav">
+
+              <div id = "nav1_link1">
+            		<a id="link_home" href="#first_section">HOME</a>
+              </div>
+
+              <div id="nav1_link2">
+                    <a id="link_projects" href="#menu_links">PROJECTS</a>
+                    <!-- <a id="link_projects" href="google.com">PROJECTS</a> -->
+          		</div>
+
+          		<h1>MICHELLE LOVEN</h1>
+
+              <div id="nav1_link3">
+                		<a id="link_resume" href="#RESUME">RESUME</a>
+          		</div>
+
+              <div id="nav1_link4">
+            		<a id="link_current" href="#CURRENT">CURRENT</a>
+          		</div>
+
+
+        </div>
+
+
+          <div id="nav2_background">
+
+                <div id="second_nav_items">
+
+                    <div id = "nav2_link1">
+                      <a id="link_home2" href="#main_nav">HOME</a>
+                    </div>
+
+                    <div id="nav2_link2">
+                          <a id="link_projects2" href="#menu_links">PROJECTS</a>
+                    </div>
+
+                    <div id="nav2_link3">
+                          <a id="link_resume2" href="#RESUME">RESUME</a>
+                    </div>
+
+                    <div id="nav2_link4">
+                      <a id="link_current2" href="#CURRENT">CURRENT</a>
+                    </div>
+
+                </div>
+
+          </div>
+
+      </div>
+
+
+
+      <div id= "intro" >Hi, I'm currently studying electrical engineering at Cornell University. </div>
+
+
+   </div>
+
+
+
+
+
+
+
+
+</body>
+
+  <div id="menu_links">
+      <div id="PROJECTS">
+        <div class="grid-container">
+
+
+                    <div class="project1">
+                          <img src="Images/rotating_spoon.png" alt="project1" class="image">
+                          <div class="middle">
+                                <div class="text">SELF-BALANCING SPOON</div>
+                          </div>
+                    </div>
+
+                    <div class="project2">
+                          <img src="Images/watch_wiring.png" alt="project2" class="image">
+                          <div class="middle">
+                                <div class="text">VIBRATING WATCH</div>
+                          </div>
+                    </div>
+
+
+                    <div class="project3">
+                          <img src="Images/rpal_logo.png" alt="project3" class="image">
+                          <div class="middle">
+                                <div class="text">AUTOMATION</div>
+                          </div>
+                    </div>
+
+                    <div class="project4">
+                          <img src="Images/python_projects.png" alt="project4" class="image">
+                          <div class="middle">
+                                <div class="text">PYTHON GAMES</div>
+                          </div>
+                    </div>
+
+
+
+
+           </div>
+         </div>
+
+
+         <div id="RESUME">
+               <div class="resume_link">
+                     <img src="Images/resume.jpg" alt="resume" class="resume_image">
+                     <div class="resume_middle">
+                        <div class="text">RESUME</div>
+                     </div>
+               </div>
+          </div>
+
+
+
+         <div id="CURRENT">
+
+           </div>
+
+      </div>
+
+
+</html>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop()> 560) {
+                second_nav_items.style.visibility='visible'
+                nav2_background.style.visibility='visible'
+                // $('second_nav_items').css('color': 'red')
+            } else {
+                second_nav_items.style.visibility='hidden'
+                nav2_background.style.visibility='hidden'
+            }
+        });
+    });
+})(jQuery);
+
+
+// (function turnRed() {
+// var myPara = document.getElementById("link_home2");
+// myPara.style.color = "red";
+// })(jQuery);
+
+</script>
