@@ -56,14 +56,13 @@ body{
 }
 
 #home_link:hover, #project_link:hover, #res_link:hover, #about_link:hover{
-  /* color: rgb(0,102,204); */
-  /* color: rgb(102,122,255); */
+
   color: rgb(112,112,225);
   text-decoration: none;
 }
 
 #home_link:target, #project_link:target, #res_link:target, #about_link:target{
-  /* color: rgb(0,102,204); */
+
   color: rgb(102,122,255);
   text-decoration: none;
 }
@@ -80,14 +79,14 @@ body{
   left: 50%;
   transform: translate(-50%);
 
-  display: -webkit-flex; /* Safari */
-  -webkit-align-items: center; /* Safari 7.0+ */
+  display: -webkit-flex;
+  -webkit-align-items: center;
   display: flex;
   align-items: center;
 }
 
 #top_nav div {
-   -webkit-flex: 1; /* Safari 6.1+ */
+   -webkit-flex: 1;
    flex: 1;
 }
 
@@ -115,19 +114,6 @@ body{
 
 
 
-
-
-
-#contact_background{
-  padding-bottom: 10%;
-  width: 100%;
-  color: transparent;
-  /* background-color: rgb(153,153,255); */
-   /* background-color: rgb(204,220,255); */
-   /* background-color: rgb(214,226,255);  */
-   /* background-color: rgb(221,231,255);   */
-   background-color: rgb(228,236,255);
-}
 
 
 #about_background{
@@ -158,27 +144,22 @@ body{
 
 
   width: 70%;
-  /* background-color: white; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
 
-  display: -webkit-flex; /* Safari */
-  -webkit-align-items: center; /* Safari 7.0+ */
+  display: -webkit-flex;
+  -webkit-align-items: center;
   display: flex;
   align-items: center;
 }
 
 #about_contents div {
-   -webkit-flex: 1; /* Safari 6.1+ */
+   -webkit-flex: 1;
    flex: 1;
 }
-
-
-
-
 
 
 #projects_background{
@@ -186,10 +167,6 @@ body{
   padding-top: 30%;
   width: 100%;
   color: transparent;
-  /* background-color: rgb(153,153,255); */
-   /* background-color: rgb(204,220,255); */
-   /* background-color: rgb(214,226,255);  */
-   /* background-color: rgb(221,231,255);   */
    background-color: rgb(228,236,255);
 }
 
@@ -281,14 +258,8 @@ body{
 
 
 
-
-
-
-
-
-
 #resume_background{
-  padding-bottom: 50%;
+  padding-bottom: 65%;
   width: 100%;
   color: transparent;
   background-color: white;
@@ -297,25 +268,26 @@ body{
 
 
 .project1_resume { grid-area: one; }
-.project2_resume { grid-area: two; }
 
 
 
 .grid-container_resume {
-  width: 80%;
-  padding-top: 80%;
+  width: 60%;
+  margin-top: 32%;
 
 
   display: grid;
   grid-template-areas:
-    'one two';
+    'one';
   grid-gap: 35px;
 
 
   position: absolute;
-  left: 50%;
+  left: 59%;
   transform: translate(-50%, -50%);
 }
+
+
 
 .grid-container_resume > div {
   background-color: rgb(100,100,120);
@@ -335,7 +307,7 @@ body{
 }
 
 .image_resume {
-  opacity: 1;
+  opacity: .95;
   display: block;
   width: 100%;
   height: 100%;
@@ -363,4 +335,27 @@ body{
 .project1_resume:hover .middle_resume, .project2_resume:hover .middle_resume {
   opacity: 1;
 
+}
+
+
+
+#contact_background{
+  padding-bottom: 10%;
+  width: 100%;
+  color: transparent;
+   background-color: rgb(228,236,255);
+}
+
+#contact_background{
+  position: relative;
+}
+
+#contact_info{
+  color: rgb(112,112,225);
+  font-size: 120%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
