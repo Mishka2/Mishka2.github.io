@@ -9,23 +9,77 @@ body{
 }
 
 
-
-
-
-
-
-
 #name_background{
   padding-bottom:10%;
   width: 100%;
   background-color: transparent;
 }
 
+/*______________________________Nav Bar__________________________*/
+
+#menu{
+  position:fixed;
+  top:0;
+  width:100%;
+  background-color: white;
+  z-index:100;
+  box-shadow: 0px 2px 3px rgb(165, 168, 168) ;
+}
+
+#menu_name{
+  float: left;
+  font-family:  'Nunito', sans-serif;
+  font-size: 25px;
+  color: rgb(111, 142, 164);
+  margin-left: 4.5%;
+  
+}
+
+#menu_button{
+  margin-top: 8px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown {
+  float:right;
+  margin-right: 5.5%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(70, 70, 70, 0.2);
+  z-index: 1;
+  transform: translate(-80%, 0%);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu_link{
+  color: rgb(79, 82, 82);
+  font-family:  'Nunito', sans-serif;
+}
+
+.menu_link:hover{
+  color: rgb(220, 146, 54)
+}
 
 
+/*______________________________Home Page__________________________*/
 #profile_pic{
   position: absolute;
-  width: 15%;
+  /* width: 15%; */
+  width: 200px;
   padding-top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34,7 +88,7 @@ body{
 
 #info{
   position: absolute;
-  padding-top: 70%;
+  padding-top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -42,142 +96,107 @@ body{
 #name{
   position: relative;
   color: rgb(82, 83, 83);
-  font-size: 5vw;
+  /* font-size: 5vw; */
+  font-size: 70px;
   width: fit-content;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  line-height: 80px;
   
 }
+
+#name_color {
+ color:  rgb(111, 142, 164);
+}
+
+
+
 
 #description{
   position: relative;
   color:  rgb(135, 138, 138);
   font-size: 1.8vw;
   width: fit-content;
-  padding-top: 5%;
+  padding-top: 0%;
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Nunito', sans-serif;
+}
+.period{
+  color: rgb(220, 146, 54)
 }
 
 
-#first_project {
+#media{
+  width:fit-content;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#github{
+  float: left;
+  margin-right: 10px;
+}
+
+#linkedin{
+  float: right;
+}
+
+/* __________________________Body of Website__________________________ */
+#web_body{
   margin-top: 50%;
+  width: 90%;
+  left: 50%;
+  transform: translate(5%, 0%);
 }
 
-#third_project {
-  margin-top: 0%;
+#experience, #projects, #about{
+  border-top: 0.5px solid rgb(208, 212, 212);
+  color: rgb(79, 82, 82);
+  font-size: 40px;
+  padding-bottom: 5%;
+  font-family: 'Nunito', sans-serif;
 }
 
-
-#first_project, #third_project{
-  padding-bottom: 30%;
-  width: 100%;
-  color: transparent;
-  /* background: rgb(71,96,113);
-  background: linear-gradient(350deg, rgba(71,96,113,1) 0%, rgba(111,142,164,1) 100%); */
-  background-color: white;
-  position: relative;
+#exp_title, #proj_title, #about_title{
+  margin-top: 3%;
 }
 
-#ASML, #robotics{
-  float: left;
-  width: 50%;
-  /* border-color: black;
-  border-style: dashed; */
-
+.proj_title {
+  margin-top: 2%;
+  /* font-size: 2vw; */
+  font-size: 28px;
+  color:  rgb(79, 82, 82);
+  font-family: 'Nunito', sans-serif;
 }
 
-#ASML_img, #robot_img{
-  position: relative;
-  width: 60%;
-  margin-left: 50%;
-  transform: translate(-40%, 0%);
+.descriptions{
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  color:  rgb(135, 135, 138);
 }
 
+.extra_words{
+  font-size:26px;
+  color:   rgb(111, 142, 164);
+  /* color:   rgb(71, 96, 113); */
+  /* color: rgb(255, 229, 132) */
+}
 
-#ASML_description, #robotics_description{
-  color: rgb(135, 138, 138);
-  float: right;
-  font-size: 2vw;
-  width: fit-content;
-  margin-right: 15%;
-  text-align: center;
-  margin-top: 7%;
+.links{
   text-decoration: none;
-  /* border-color: black;
-  border-style: dashed; */
+  color:  rgb(79, 82, 82);
 }
-
-#ASML_description:hover, #robotics_description:hover{
-  color:  rgb(78, 78, 78);
-  float: right;
-  font-size: 2vw;
-  width: fit-content;
-  margin-right: 15%;
-  text-align: center;
-  margin-top: 7%;
-  /* border-color: black;
-  border-style: dashed; */
-}
-
-#second_project, #fourth_project{
-  margin-top: 0%;
-  padding-bottom: 30%;
-  width: 100%;
-  color: transparent;
-  /* background: rgb(71,96,113);
-  background: linear-gradient(350deg, rgba(71,96,113,1) 0%, rgba(111,142,164,1) 100%); */
-  background-color: white;
-  position: relative;
-}
-
-#watch, #game{
-  float: right;
-  width: 40%;
-  /* border-color: black;
-  border-style: dashed; */
-
-}
-
-#watch_img, #game_img{
-  position: relative;
-  width: 80%;
-  margin-left: 50%;
-  transform: translate(-60%, 0%);
-}
-
-#game_img{
-  width: 60%;
-}
-
-
-#watch_description, #game_link{
-  color: rgb(135, 138, 138);
-  float: left;
-  font-size: 2vw;
-  width: fit-content;
-  margin-left: 15%;
-  text-align: center;
-  margin-top: 7%;
+.links:hover{
   text-decoration: none;
-  /* border-color: black;
-  border-style: dashed; */
+  color:  rgb(220, 146, 54);
 }
 
-#watch_description:hover, #game_link:hover{
-  color:  rgb(78, 78, 78);
-  float: left;
-  font-size: 2vw;
-  width: fit-content;
-  margin-left: 15%;
-  text-align: center;
-  margin-top: 7%;
-  text-decoration: none;
-  /* border-color: black;
-  border-style: dashed; */
-}
+/* __________________________ ARROW Stuff __________________________ */
+
 
 .arrow{
   position: absolute;

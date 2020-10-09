@@ -5,24 +5,42 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Michelle Loven's Website</title>
-      <link rel="stylesheet" type="text/css" href="index.css">
-
-
+      		<link rel="stylesheet" type="text/css" href="index.css" >
+			<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 		</head>
 
 
 
-	<body>
 
+	<body>
+		<a name="home"></a>
+		<div id="menu">
+			<div id="menu_name">Michelle Loven</div>
+			<div class="dropdown">
+				<img id='menu_button' src="Images/menu_button.png" style="width:25px;height:20px;" alt="GitHub">
+				<div class="dropdown-content">
+					<a class='menu_link' href="#home">Home</a>
+					<a class='menu_link' href="#experience">Experience</a>
+					<a class='menu_link' href="#projects">Projects</a>
+					<a class='menu_link' href="#about">About Me</a>
+					<a class='menu_link' href="Images/michelle_loven_resume_2020.pdf">Resume</a>
+				</div>
+			</div>
+			
+		</div>
 
 			<div id = 'name_background'>
 				<img id="profile_pic" src="Images/profile_pic.png" >
 				<div id= "info">
 					<div id = 'name'>
-						Michelle Loven
+						Michell<span id="name_color">e Lov</span>en
 					</div>
 					<div id="description">
-						Senior ECE at Cornell University. Passionate about software and hardware. 
+						Senior ECE at Cornell University<span class="period">.</span> Passionate about software and hardware<span class="period">.</span> 
+					</div>
+					<div id="media">
+						<a href="https://github.com/Mishka2"><img id='github' src="Images/github_logo.png" style="width:35px;height:35px;" alt="GitHub"></a>
+						<a href="https://www.linkedin.com/in/michelle-loven/"><img id='linkedin' src="Images/linkedin_logo.png" style="width:35px;height:35px;" alt="LinkedIn"></a>
 					</div>
 				</div>
 				
@@ -33,41 +51,105 @@
   
 			</div>
 
-
-
-
-			<div id = 'first_project'>
-					<div id= "ASML">
-						<img id= "ASML_img"  src="Images/asml_logo.jpeg">
+			<a name="experience"></a>
+			<div id="web_body">
+				<div id='experience'>
+					<div id="exp_title">
+						EXPERIENCE
 					</div>
-					<div id= "ASML_description">
-						Analog Design Engineer <br> at ASML
+					<div class= "proj_title" id="exp1_description">
+						Analog Design Engineer Intern <span class="extra_words">| Advanced Semiconductor Materials Lithography</span>
+						<div class="descriptions">
+							Designed capacitive switched transimpedance amplifiers to replace existing amplifiers. Improved noise by 50dB<br>
+    						Researched tolerance/ timing/ drift and selected parts for amplifier designs <br>
+    						Conducted Monte Carlo simulations for noise gain, AC/DC sweeps, thermal analysis, tolerance response<br>
+						</div>
 					</div>
-			</div>
-
-
-			<div id = 'second_project'>
-				<a id= "watch_description" href= "https://github.com/Mishka2/vibrating_watch">Vibrating Watch <br> for the Visually Impaired</a>
-
-				<div id= "watch">
-					<img id= "watch_img"  src="Images/watch_wiring.png">
+					<div class= "proj_title" id="exp2_description">
+						Embedded Systems Elective T.A. <span class="extra_words">| Worcester Polytechnic Institute</span>
+						<div class="descriptions">
+							Instructed and contributed to the development of a course in which 25 high school students learned how to collect data using various sensors and microcontrollers <br>
+    						Taught 40 elementary/middle school students to integrate sensors into robotics. Implemented line-following, proportional control, sensor input analysis <br>
+						</div>
+					</div>
+					<div class= "proj_title" id="exp3_description">
+						<a class="links" href="Images/robotics.pdf">Automation in Robotics Researcher <span class="extra_words">| Cornell University </span></a>
+						<div class="descriptions">
+							Worked on automation of IKEA furniture assembly <br>
+    						Led electrical team to build novel dowel manipulator and clamp compatible with Rethink Robotics humanoid robot <br>
+    						Contributed to mechanical design and software of automatic robotics and custom sensors <br>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div id = 'third_project'>
-				<div id= "robotics">
-					<img id= "robot_img"  src="Images/rpal_logo.png">
+				<a name="projects"></a>
+				<div id='projects'>
+					<div id="proj_title">
+						PROJECTS
+					</div>
+					<div class= "proj_title" id="proj1_description">
+						<a class="links" href="https://github.com/Mishka2/vibrating_watch">Vibrating Watch for the Visually Impaired</a>
+						<div class="descriptions">
+							Programmed and tested novel vibration patterns for accuracy of user perception. <br>
+							3D printed compact casing and designed circuitry. <br>
+							Presented at Intel International Science and Engineering Fair. <br>
+						</div>
+					</div>
+					<div class= "proj_title" id="proj2_description">
+						<a class="links" href="https://github.com/Mishka2/safe_driving_application">Android App to Discourage Texting While Driving</a>
+						<div class="descriptions">
+							Developed app that sends drivers’ estimated arrival time to certain contacts via SMS.
+						</div>
+					</div>
+					<div class= "proj_title" id="proj3_description">
+						Self Balancing Spoon
+						<div class="descriptions">
+							Designed and 3D printed a spoon to maintain single axis rotational stability for people with limited wrist mobility.
+						</div>
+					</div>
+					<div class= "proj_title" id="proj4_description">
+						<a class="links" href="https://github.com/Mishka2/online_multiplayer_liars_dice">Online multiplayer Liar's Dice game</a>
+						<div class="descriptions">
+							Designed and implemented frontend and backend for online multiplayer game of Liar's Dice.
+						</div>
+					</div>
+					<div class= "proj_title" id="proj5_description">
+						<a class="links" href="https://github.com/Mishka2/">Snake and Minesweeper Games to Play on Terminal</a>
+						<div class="descriptions">
+							Developed fun games that use terminal text as user interface.
+						</div>
+					</div>
+					<div class= "proj_title" id="proj6_description">
+						<a class="links" href="https://github.com/Mishka2/">Unbeatable Tic-Tac-Toe game</a>
+						<div class="descriptions">
+							Developed an Unbeatable Tic-Tac-Toe game.
+						</div>
+					</div>
 				</div>
-				<a id= "robotics_description" href="Images/robotics.pdf">Robotics Researcher <br> at Cornell University</a>
+
+				<a name="about"></a>
+				<div id='about'>
+					<div id="about_title">
+						ABOUT ME
+					</div>
+					<div class= "proj_title" id="about1_description">
+						Volunteering
+						<div class="descriptions">
+							Tutored adults in math to recieve GED's. <br>
+							Host a science booth at WPI's anual Touch Tomorrow. We get messy!
+						</div>
+					</div>
+					<div class= "proj_title" id="about2_description">
+						Art
+						<div class="descriptions">
+							Water colors and acrylics.
+						</div>
+					</div>
+				</div>
+
 				
-			</div>
 
-			<div id = 'fourth_project'>
-				<a id= "game_link" href= "https://github.com/Mishka2/">Game Development</a>
 
-				<div id= "game">
-					<img id= "game_img"  src="Images/rudo.png">
-				</div>
 			</div>
 
 
@@ -75,3 +157,21 @@
   </body>
 
 	</html>
+
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+	(function($) {          
+		$(document).ready(function(){  
+			$('#menu').hide();       
+			$(window).scroll(function(){         
+				if ($(this).scrollTop() > 400) {
+					$('#menu').fadeIn(500);
+				} else {
+					$('#menu').fadeOut(500);
+				}
+			});
+		});
+	})(jQuery);
+</script>
