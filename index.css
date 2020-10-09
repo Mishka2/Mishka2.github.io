@@ -2,8 +2,6 @@
 
 
 
-
-
 body{
   margin-right: 0;
   margin-left: 0;
@@ -13,349 +11,201 @@ body{
 
 
 
-#top_spacer{
-  position: relative;
-  z-index: 3;
-  color: transparent;
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
 
-#background_image{
-  z-index: 1;
-  position:relative;
-  color:transparent;
-  background-image: url('Images/painting.jpg');
-  padding-bottom: 40%;
+
+
+#name_background{
+  padding-bottom:10%;
   width: 100%;
-  background-repeat: no-repeat;
-
-}
-
-
-#top_website{
-  position: fixed;
-  z-index: -99;
-  width: 100%;
-  padding-bottom: 10%;
-}
-
-#spacer{
-  padding-bottom: 40%;
-  color: transparent;
   background-color: transparent;
 }
 
 
 
-#home_link, #project_link, #res_link, #about_link{
-  color: grey;
-  text-decoration: none;
-}
-
-#home_link:hover, #project_link:hover, #res_link:hover, #about_link:hover{
-
-  color: rgb(112,112,225);
-  text-decoration: none;
-}
-
-#home_link:target, #project_link:target, #res_link:target, #about_link:target{
-
-  color: rgb(102,122,255);
-  text-decoration: none;
-}
-
-
-#top_nav{
-  z-index: 100;
-
-  position: fixed;
-  width: 60%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
+#profile_pic{
+  position: absolute;
+  width: 15%;
+  padding-top: 30%;
   left: 50%;
-  transform: translate(-50%);
-
-  display: -webkit-flex;
-  -webkit-align-items: center;
-  display: flex;
-  align-items: center;
+  transform: translate(-50%, -50%);
+  margin-bottom: 0px;
 }
 
-#top_nav div {
-   -webkit-flex: 1;
-   flex: 1;
-}
-
-#nav_background{
-  position: fixed;
-  color: transparent;
-  width: 100%;
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: 0px 0px 5px grey;
-  z-index: 99;
+#info{
+  position: absolute;
+  padding-top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #name{
-  position: absolute;
-  color: white;
-  font-weight: 400;
-  font-size: 600%;
-  top: 50%;
+  position: relative;
+  color: rgb(82, 83, 83);
+  font-size: 5vw;
+  width: fit-content;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+#description{
+  position: relative;
+  color:  rgb(135, 138, 138);
+  font-size: 1.8vw;
+  width: fit-content;
+  padding-top: 5%;
+  text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 
+#first_project {
+  margin-top: 50%;
+}
+
+#third_project {
+  margin-top: 0%;
+}
 
 
-
-
-#about_background{
+#first_project, #third_project{
   padding-bottom: 30%;
-
   width: 100%;
   color: transparent;
+  /* background: rgb(71,96,113);
+  background: linear-gradient(350deg, rgba(71,96,113,1) 0%, rgba(111,142,164,1) 100%); */
   background-color: white;
   position: relative;
 }
 
+#ASML, #robotics{
+  float: left;
+  width: 50%;
+  /* border-color: black;
+  border-style: dashed; */
 
-
-#profile_pic{
-  background-image: url('Images/profile.png');
-  background-size: contain;
-  color: transparent;
-  padding-bottom: 30%;
-  background-repeat: no-repeat;
 }
 
-#profile_description{
-  font-size: 180%;
-  color: rgb(100,100,100);
-}
-
-#about_contents{
-
-
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-
-  display: -webkit-flex;
-  -webkit-align-items: center;
-  display: flex;
-  align-items: center;
-}
-
-#about_contents div {
-   -webkit-flex: 1;
-   flex: 1;
-}
-
-
-#projects_background{
-  padding-bottom: 30%;
-  padding-top: 30%;
-  width: 100%;
-  color: transparent;
-   background-color: rgb(228,236,255);
-}
-
-
-
-
-.project1 { grid-area: one; }
-.project2 { grid-area: two; }
-.project3 { grid-area: three; }
-.project4 { grid-area: four; }
-.project5 { grid-area: five; }
-.project6 { grid-area: six; }
-
-
-
-.grid-container {
-  width: 80%;
-
-
-  display: grid;
-  grid-template-areas:
-    'one one       two two      five five '
-    'one one       two two      five five '
-    'one one       four four    five five '
-    'one one       four four    five five '
-    'three three   four four    six six'
-    'three three   four four    six six';
-  grid-gap: 35px;
-
-
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.grid-container > div {
-  background-color: rgb(100,100,120);
-  text-align: center;
-  font-size: 30px;
-}
-
-
-.project1, .project2, .project3, .project4, .project5, .project6 {
+#ASML_img, #robot_img{
   position: relative;
-
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(78,86,105, .7);
-  color: white;
-  font-size: 55%;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  z-index: 100;
-  transition: .5s ease;
-  opacity: 0;
-  width: 100%;
-  text-align: center;
-}
-
-
-
-.project1:hover .middle, .project2:hover .middle, .project3:hover .middle, .project4:hover .middle, .project5:hover .middle, .project6:hover .middle {
-  opacity: 1;
-
-}
-
-.text {
-  color: white;
-  font-size: 60%;
-}
-
-
-
-
-
-
-
-
-#resume_background{
-  padding-bottom: 65%;
-  width: 100%;
-  color: transparent;
-  background-color: white;
-}
-
-
-
-.project1_resume { grid-area: one; }
-
-
-
-.grid-container_resume {
   width: 60%;
-  margin-top: 32%;
-
-
-  display: grid;
-  grid-template-areas:
-    'one';
-  grid-gap: 35px;
-
-
-  position: absolute;
-  left: 59%;
-  transform: translate(-50%, -50%);
+  margin-left: 50%;
+  transform: translate(-40%, 0%);
 }
 
 
-
-.grid-container_resume > div {
-  background-color: rgb(100,100,120);
+#ASML_description, #robotics_description{
+  color: rgb(135, 138, 138);
+  float: right;
+  font-size: 2vw;
+  width: fit-content;
+  margin-right: 15%;
   text-align: center;
-  font-size: 30px;
+  margin-top: 7%;
+  text-decoration: none;
+  /* border-color: black;
+  border-style: dashed; */
 }
 
-
-.project1_resume, .project2_resume{
-  position: relative;
-  color:white;
-
-}
-
-.project1_resume{
-  width: 70%;
-}
-
-.image_resume {
-  opacity: .95;
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle_resume {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(78,86,105, .7);
-  color: white;
-  font-size: 55%;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  z-index: 100;
-  transition: .5s ease;
-  opacity: 0;
-  width: 100%;
+#ASML_description:hover, #robotics_description:hover{
+  color:  rgb(78, 78, 78);
+  float: right;
+  font-size: 2vw;
+  width: fit-content;
+  margin-right: 15%;
   text-align: center;
+  margin-top: 7%;
+  /* border-color: black;
+  border-style: dashed; */
 }
 
-
-.project1_resume:hover .middle_resume, .project2_resume:hover .middle_resume {
-  opacity: 1;
-
-}
-
-
-
-#contact_background{
-  padding-bottom: 10%;
+#second_project, #fourth_project{
+  margin-top: 0%;
+  padding-bottom: 30%;
   width: 100%;
   color: transparent;
-   background-color: rgb(228,236,255);
-}
-
-#contact_background{
+  /* background: rgb(71,96,113);
+  background: linear-gradient(350deg, rgba(71,96,113,1) 0%, rgba(111,142,164,1) 100%); */
+  background-color: white;
   position: relative;
 }
 
-#contact_info{
-  color: rgb(112,112,225);
-  font-size: 120%;
-  margin: 0;
+#watch, #game{
+  float: right;
+  width: 40%;
+  /* border-color: black;
+  border-style: dashed; */
+
+}
+
+#watch_img, #game_img{
+  position: relative;
+  width: 80%;
+  margin-left: 50%;
+  transform: translate(-60%, 0%);
+}
+
+#game_img{
+  width: 60%;
+}
+
+
+#watch_description, #game_link{
+  color: rgb(135, 138, 138);
+  float: left;
+  font-size: 2vw;
+  width: fit-content;
+  margin-left: 15%;
+  text-align: center;
+  margin-top: 7%;
+  text-decoration: none;
+  /* border-color: black;
+  border-style: dashed; */
+}
+
+#watch_description:hover, #game_link:hover{
+  color:  rgb(78, 78, 78);
+  float: left;
+  font-size: 2vw;
+  width: fit-content;
+  margin-left: 15%;
+  text-align: center;
+  margin-top: 7%;
+  text-decoration: none;
+  /* border-color: black;
+  border-style: dashed; */
+}
+
+.arrow{
   position: absolute;
-  top: 50%;
+  padding-top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid rgb(216, 216, 216);
+  border-right: 5px solid  rgb(216, 216, 216);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-5px,-5px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(5px,5px);
+  }
 }
