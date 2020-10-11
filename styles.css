@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+
+#arrow{
+    width:2%;
+    float: left;
+    padding-top: 1.5%;
+    padding-left: 2%;
+}
+
+
+#title{
+    position: relative;
+    font-size: 70px;
+    width: 100%;
+}
+
+.links{
+    text-decoration: none;
+  }
+
+#name1{
+    transform: translate(38%, 0%);
+    font-family: 'Nunito', sans-serif;
+    color: rgb(82, 83, 83);
+    font-weight: 500;
+    line-height: 80px;
+}
+  
+#title_color {
+    color:  rgb(111, 142, 164);
+}
+
+
+
+
+#painting{
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.description{
+    color:  rgb(135, 138, 138);
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#projects_background{
+    padding-bottom: 30%;
+    padding-top: 50%;
+    width: 100%;
+    color: transparent;
+  }
+  
+  
+  
+  
+  .project1 { grid-area: one; }
+  .project2 { grid-area: two; }
+  .project3 { grid-area: three; }
+  .project4 { grid-area: four; }
+  .project5 { grid-area: five; }
+  
+  
+  
+  .grid-container {
+    width: 50%;
+  
+  
+    display: grid;
+    grid-template-areas:
+      'one one       two two        '
+      'one one       two two        '
+      'three three   three three    '
+      'three three   three three    '
+      'four four     five five      '
+      'four four     five five      ';
+    grid-gap: 35px;
+  
+  
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  
+  .project1, .project2, .project3, .project4, .project5, .project6 {
+    position: relative;
+    height: 95%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(78,86,105, .7);
+    font-family:  'Nunito', sans-serif;
+    color: white;
+    font-size: 55%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    z-index: 100;
+    transition: .5s ease;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  .project1:hover .middle, .project2:hover .middle, .project3:hover .middle, .project4:hover .middle, .project5:hover .middle, .project6:hover .middle {
+    opacity: 1;
+  
+  }
+  
+  .text {
+    color: white;
+    font-size: 60%;
+  }
+  
+  
+  
