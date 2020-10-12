@@ -20,12 +20,12 @@
   }
 
 #name1{
-    transform: translate(95%, 0%);
+    transform: translate(42%, 0%);
     font-family: 'Nunito', sans-serif;
     color: rgb(82, 83, 83);
     font-weight: 500;
-    width: 40%;
     line-height: 80px;
+    width: 60%;
 }
   
 #title_color {
@@ -48,7 +48,7 @@
 
 #projects_background{
     padding-bottom: 30%;
-    padding-top: 50%;
+    padding-top: 15%;
     width: 100%;
     color: transparent;
   }
@@ -58,30 +58,22 @@
   
   .project1 { grid-area: one; }
   .project2 { grid-area: two; }
-  .project3 { grid-area: three; }
-  .project4 { grid-area: four; }
-  .project5 { grid-area: five; }
   
   
   
   .grid-container {
-    width: 50%;
+    width: 80%;
   
   
     display: grid;
     grid-template-areas:
-      'one one       two two        '
-      'one one       two two        '
-      'three three   three three    '
-      'three three   three three    '
-      'four four     five five      '
-      'four four     five five      ';
+      'one     one   one one one two   two two    ';
     grid-gap: 35px;
   
   
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
   }
   
   .grid-container > div {

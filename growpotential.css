@@ -13,6 +13,8 @@
     position: relative;
     font-size: 70px;
     width: 100%;
+    
+    
 }
 
 .links{
@@ -20,7 +22,7 @@
   }
 
 #name1{
-    transform: translate(95%, 0%);
+    transform: translate(75%, 0%);
     font-family: 'Nunito', sans-serif;
     color: rgb(82, 83, 83);
     font-weight: 500;
@@ -35,10 +37,6 @@
 
 
 
-#painting{
-    margin-left: 50%;
-    transform: translate(-50%,0%);
-}
 
 .description{
     color:  rgb(135, 138, 138);
@@ -48,9 +46,10 @@
 
 #projects_background{
     padding-bottom: 30%;
-    padding-top: 50%;
+    padding-top: 70%;
     width: 100%;
     color: transparent;
+    
   }
   
   
@@ -60,7 +59,6 @@
   .project2 { grid-area: two; }
   .project3 { grid-area: three; }
   .project4 { grid-area: four; }
-  .project5 { grid-area: five; }
   
   
   
@@ -70,12 +68,8 @@
   
     display: grid;
     grid-template-areas:
-      'one one       two two        '
-      'one one       two two        '
-      'three three   three three    '
-      'three three   three three    '
-      'four four     five five      '
-      'four four     five five      ';
+      'one        two         '
+      'three    four     ';
     grid-gap: 35px;
   
   
@@ -94,6 +88,29 @@
     position: relative;
     height: 95%;
   }
+
+  #phone{
+      float:left;
+      width: 22%;
+      margin-left: 18%;
+      margin-top: 2%;
+  }
+
+  #topPhone{
+      width: 100%;
+  }
+
+  #describePhone{
+      float:right;
+      margin-right: 25%;
+      margin-top: 15%;
+      width: 30%;
+      text-align: center;
+      font-size: 18px;
+      color:  rgb(135, 138, 138);
+      font-family: 'Nunito', sans-serif;
+  }
+
   
   .image {
     opacity: 1;
