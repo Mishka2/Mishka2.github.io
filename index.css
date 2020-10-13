@@ -173,14 +173,16 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
+
 .descriptions{
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Nunito', sans-serif;
   color:  rgb(135, 135, 138);
 }
 
 .extra_words{
-  font-size:26px;
+  margin-top: 0px;
+  font-size:22px;
   color:   rgb(111, 142, 164);
   /* color:   rgb(71, 96, 113); */
   /* color: rgb(255, 229, 132) */
@@ -189,10 +191,26 @@ body{
 .links{
   text-decoration: none;
   color:  rgb(79, 82, 82);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
+
 .links:hover{
   text-decoration: none;
   color:  rgb(220, 146, 54);
+}
+
+.exp_date{
+  float:left;
+}
+.date{
+  float:right;
+  font-size:15px;
+  color:  rgb(220, 146, 54);
+}
+
+.parent{
+  overflow: hidden
 }
 
 /* __________________________ ARROW Stuff __________________________ */
