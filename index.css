@@ -232,7 +232,7 @@ body{
   padding-top: 4%;
   padding-bottom: 4%;
   border-radius: 10px;
-  -webkit-filter: brightness(100%);
+  /* -webkit-filter: brightness(100%); */
 }
 
 #assistive_technology_block:hover, 
@@ -243,8 +243,8 @@ body{
 #game_dev_block:focus
 {
   color:  rgb(220, 146, 54);
-  -webkit-filter: brightness(95%);
-  -webkit-transition: all 0.2s ease;
+  /* -webkit-filter: brightness(95%);
+  -webkit-transition: all 0.2s ease; */
 
 }
 
