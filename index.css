@@ -21,22 +21,26 @@ body{
   position:fixed;
   top:0;
   width:100%;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(111, 142, 164);
+  height:7%;
   z-index:100;
-  box-shadow: 0px 2px 3px rgb(165, 168, 168) ;
+  /* box-shadow: 0px 2px 3px rgb(165, 168, 168) ; */
 }
 
 #menu_name{
   float: left;
   font-family:  'Nunito', sans-serif;
   font-size: 25px;
-  color: rgb(111, 142, 164);
+  /* color: rgb(111, 142, 164); */
+  color: white; 
   margin-left: 4.5%;
+  padding-top: 0.8%;
   
 }
 
 #menu_button{
-  margin-top: 8px;
+  margin-top: 18px;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -173,6 +177,10 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
+.proj_title:hover {
+  color:  rgb(220, 146, 54);
+}
+
 
 .descriptions{
   font-size: 16px;
@@ -213,6 +221,49 @@ body{
   overflow: hidden
 }
 
+
+#assistive_technology_block, #mobile_apps_block, #game_dev_block{
+  width: 100%;
+  /* outline-style: dashed;
+  outline-color: black; */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-radius: 10px;
+  -webkit-filter: brightness(100%);
+}
+
+#assistive_technology_block:hover, 
+#assistive_technology_block:focus,
+#mobile_apps_block:hover, 
+#mobile_apps_block:focus,
+#game_dev_block:hover,
+#game_dev_block:focus
+{
+  color:  rgb(220, 146, 54);
+  -webkit-filter: brightness(95%);
+  -webkit-transition: all 0.2s ease;
+
+}
+
+
+#assistive_technology_block{
+  background-image: url("Images/circuit.jpg");
+  background-size: 100% auto;
+} 
+
+#mobile_apps_block{
+  background-image: url("Images/phones.jpg");
+  background-size: 100% auto;
+}
+
+#game_dev_block{
+  background-image: url("Images/game.jpg");
+  background-size: 100% auto;
+}
+
 /* __________________________ ARROW Stuff __________________________ */
 
 
@@ -246,3 +297,93 @@ body{
       transform: rotate(45deg) translate(5px,5px);
   }
 }
+
+
+
+
+
+/* __________________________ Modal Stuff __________________________ */
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top:0;
+  width: 100%; /* Full width */
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.closeAss, .closeMobile, .closeGame {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeAss:hover,
+.closeAss:focus,
+.closeMobile:hover,
+.closeMobile:focus,
+.closeGame:hover,
+.closeGame:focus
+ {
+  color: rgb(220, 146, 54);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_proj{
+  font-size: 28px;
+}
+
+
+
+
+/* __________________________ Footer stuff __________________________ */
+#footer{
+  background-color:  rgb(111, 142, 164);
+  height: 20%;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Nunito', sans-serif;
+  color:  white;
+  padding-top: 3%;
+}
+
+#foot_media{
+  width:fit-content;
+  margin-left: 50%;
+  margin-top: 30px;
+  transform: translate(-50%, -50%);
+}
+
+
+#email{
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+html,body { height:100%; }
+
