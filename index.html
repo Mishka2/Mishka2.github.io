@@ -108,14 +108,17 @@
 					<div id="proj_title">
 						PROJECTS
 					</div>
-					<div id ="assistive_technology_block" class="button_proj">
-						assistive technology
-					</div>
-					<div id ="mobile_apps_block" class="button_proj">
-						mobile applications
-					</div>
-					<div id ="game_dev_block" class="button_proj">
-						game development
+					<div id = "projects_div" >
+						<div id ="mobile_apps_block" class="button_proj ">
+							mobile<br>applications
+						</div>
+						<div id ="assistive_technology_block" class="button_proj ">
+							assistive<br>technology
+						</div>
+						
+						<div id ="game_dev_block" class="button_proj">
+							game<br>development
+						</div>
 					</div>
 					
 				</div>
@@ -165,9 +168,8 @@
 					<div class= "proj_title" id="proj3_description">
 						self balancing spoon
 						<div class="descriptions">
-							<ul>
-								<li>Designed and 3D printed a spoon to maintain single axis rotational stability for people with limited wrist mobility.</li>
-							</ul>
+							Designed and 3D printed a spoon to maintain single axis rotational stability for people with limited wrist mobility.
+							
 						</div>
 					</div>
 				</div>
@@ -184,17 +186,15 @@
 					<div class= "proj_title" id="proj7_description">
 						<a class="links" href="growpotential.html">android app for GrowPotential</a>
 						<div class="descriptions">
-							<ul>
-								<li>Developed Android app that reads information from a server and displays updates from watering system.</li>
-							</ul>
+							Developed Android app that reads information from a server and displays updates from watering system.
+							
 						</div>
 					</div>
 					<div class= "proj_title" id="proj2_description">
 						<a class="links" href="https://github.com/Mishka2/safe_driving_application">android app to discourage texting while driving</a>
 						<div class="descriptions">
-							<ul>
-								<li>Developed app that sends drivers’ estimated arrival time to certain contacts via SMS.</li>
-							</ul>
+							Developed app that sends drivers’ estimated arrival time to certain contacts via SMS.
+							
 						</div>
 					</div>
 
@@ -248,82 +248,17 @@
 
 
 
-
+			<script src="https://code.jquery.com/jquery-latest.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+			<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+		  
+			<!-- Load our React component. -->
+			<script src="index.js"></script>
 
   </body>
 
 	</html>
 
 
-<script src="https://code.jquery.com/jquery-latest.js"></script>
 
-<script type="text/javascript">
-
-	// blinking arrow
-	(function($) {          
-		$(document).ready(function(){  
-			$('#menu').hide();       
-			$(window).scroll(function(){         
-				if ($(this).scrollTop() > 400) {
-					$('#menu').fadeIn(500);
-				} else {
-					$('#menu').fadeOut(500);
-				}
-			});
-		});
-	})(jQuery);
-
-
-	// Get the modal
-	var modalAss = document.getElementById("myModalAssis");
-	var modalMobile = document.getElementById("myModalMobile");
-	var modalGame = document.getElementById("myModalGame");
-
-	// Get the button that opens the modal
-	var btnAss = document.getElementById("assistive_technology_block");
-	var btnMobile = document.getElementById("mobile_apps_block");
-	var btnGame = document.getElementById("game_dev_block");
-
-	// Get the <span> element that closes the modal
-	var spanAss = document.getElementsByClassName("closeAss")[0];
-	var spanMobile = document.getElementsByClassName("closeMobile")[0];
-	var spanGame = document.getElementsByClassName("closeGame")[0];
-
-	// When the user clicks the button, open the modal 
-	btnAss.onclick = function() {
-		modalAss.style.display = "block";
-	}
-	btnMobile.onclick = function() {
-		modalMobile.style.display = "block";
-	}
-	btnGame.onclick = function() {
-		modalGame.style.display = "block";
-	}
-
-	// When the user clicks on <span> (x), close the modal
-	spanAss.onclick = function() {
-		modalAss.style.display = "none";
-	}
-	spanMobile.onclick = function() {
-		modalMobile.style.display = "none";
-	}
-	spanGame.onclick = function() {
-		modalGame.style.display = "none";
-	}
-
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-		if (event.target == modalAss) {
-			modalAss.style.display = "none";
-		}
-		if (event.target == modalMobile) {
-			modalMobile.style.display = "none";
-		}
-		if (event.target == modalGame) {
-			modalGame.style.display = "none";
-		}
-	}
-
-
-
-</script>

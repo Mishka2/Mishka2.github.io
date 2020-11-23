@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 body{
   margin-right: 0;
   margin-left: 0;
@@ -223,14 +221,13 @@ body{
 
 
 #assistive_technology_block, #mobile_apps_block, #game_dev_block{
-  width: 100%;
+  width: 40%;
+  height: 40%;
   /* outline-style: dashed;
   outline-color: black; */
+  color:  white;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 15%;
   border-radius: 10px;
   -webkit-filter: brightness(100%);
 }
@@ -242,27 +239,71 @@ body{
 #game_dev_block:hover,
 #game_dev_block:focus
 {
-  color:  rgb(220, 146, 54);
-  -webkit-filter: brightness(95%);
+  /* color:  rgb(220, 146, 54); */
+  color:  rgb(79, 82, 82);
+  -webkit-filter: brightness(90%);
   -webkit-transition: all 0.2s ease;
 
 }
 
 
 #assistive_technology_block{
-  background-image: url("Images/circuit.jpg");
-  background-size: 100% auto;
+  background-image: url("Images/orange_circle.png");
+  background-size: 100% auto ;
+  transform: translate(-1650px);
+  background-repeat: no-repeat;
+  position: relative;
+  /* outline-style: dashed;
+  outline-color: black; */
 } 
 
 #mobile_apps_block{
-  background-image: url("Images/phones.jpg");
-  background-size: 100% auto;
+  background-image: url("Images/blue_circle.png");
+  background-size: 100% auto ;
+  transform: translate(1600px, -100px);
+  background-repeat: no-repeat;
+  position: relative;
+  float:right;
+  /* outline-style: dashed;
+  outline-color: black */
 }
 
 #game_dev_block{
-  background-image: url("Images/game.jpg");
-  background-size: 100% auto;
+  background-image: url("Images/gray_circle.png");
+  background-size:100% auto  ;
+  transform: translate(-1700px, -200px);
+  background-repeat: no-repeat;
+  position: relative;
+  float: right;
+  margin-top: 10%;
+  /* outline-style: dashed;
+  outline-color: black */
 }
+
+
+
+#projects_div{
+  /* outline-style: dashed;
+  outline-color: black; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 500px;
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* __________________________ ARROW Stuff __________________________ */
 
