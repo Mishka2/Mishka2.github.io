@@ -26,7 +26,79 @@
 
 
 
+    // $(document).ready(function(){
+    //     $("#assistive_technology_block").mouseover(function(){ $(this).find("#assistive_technology_block").animate({left: '+=150px',width: '+=9000px'})});
+    //     $("#assistive_technology_block").mouseout(function(){ $(this).find("#assistive_technology_block").animate({height: '+=150px',width: '+=90px'})});
+    // });
+
+
+
 })(jQuery);
+
+
+function mouseOverMobile() {
+    document.getElementById("mobile_apps_block").style.width = "30%";
+    document.getElementById("mobile_apps_block").style.height = "20%";
+    document.getElementById("mobile_apps_block").style.margin = "-10px";
+   
+    document.getElementById("game_dev_block").style.marginLeft = "-15px";
+    document.getElementById("game_dev_block").style.marginTop = "35px";
+}
+
+function mouseOutMobile() {
+    console.log("AHhh")
+    jQuery(function($) {
+        $("#mobile_apps_block").css("width","25%");
+        $("#mobile_apps_block").css("height","15%");
+        $("#mobile_apps_block").css("margin","15px");
+
+        $("#game_dev_block").css("margin","15px");
+        
+    }); 
+}
+
+function mouseOverAss() {
+    document.getElementById("assistive_technology_block").style.width = "30%";
+    document.getElementById("assistive_technology_block").style.height = "20%";
+    document.getElementById("assistive_technology_block").style.margin = "-10px";
+
+    document.getElementById("game_dev_block").style.marginLeft = "25px";
+    document.getElementById("game_dev_block").style.marginTop = "35px";
+}
+
+function mouseOutAss() {
+    jQuery(function($) {
+        $("#assistive_technology_block").css("width","25%");
+        $("#assistive_technology_block").css("height","15%");
+        $("#assistive_technology_block").css("margin","15px");
+
+        $("#game_dev_block").css("margin","15px");
+    }); 
+}
+
+function mouseOverGame() {
+    document.getElementById("game_dev_block").style.width = "30%";
+    document.getElementById("game_dev_block").style.height = "20%";
+    document.getElementById("game_dev_block").style.margin = "-10px";
+
+    document.getElementById("assistive_technology_block").style.marginLeft = "-5px";
+    document.getElementById("assistive_technology_block").style.marginTop = "-5px";
+
+    document.getElementById("mobile_apps_block").style.marginRight = "-50px";
+    document.getElementById("mobile_apps_block").style.marginTop = "-25px";
+}
+
+function mouseOutGame() {
+    jQuery(function($) {
+        $("#game_dev_block").css("width","25%");
+        $("#game_dev_block").css("height","15%");
+        $("#game_dev_block").css("margin","15px");
+
+        $("#assistive_technology_block").css("margin","15px");
+
+        $("#mobile_apps_block").css("margin","15px");
+    }); 
+}
 
 
 
