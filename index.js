@@ -25,135 +25,144 @@
     });
 
 
-
-    // $(document).ready(function(){
-    //     $("#assistive_technology_block").mouseover(function(){ $(this).find("#assistive_technology_block").animate({left: '+=150px',width: '+=9000px'})});
-    //     $("#assistive_technology_block").mouseout(function(){ $(this).find("#assistive_technology_block").animate({height: '+=150px',width: '+=90px'})});
-    // });
-
-
-
 })(jQuery);
 
 
-function mouseOverMobile() {
-    document.getElementById("mobile_apps_block").style.width = "30%";
-    document.getElementById("mobile_apps_block").style.height = "20%";
-    document.getElementById("mobile_apps_block").style.margin = "-10px";
-   
-    document.getElementById("game_dev_block").style.marginLeft = "-15px";
-    document.getElementById("game_dev_block").style.marginTop = "35px";
-}
 
-function mouseOutMobile() {
-    console.log("AHhh")
-    jQuery(function($) {
-        $("#mobile_apps_block").css("width","25%");
-        $("#mobile_apps_block").css("height","15%");
-        $("#mobile_apps_block").css("margin","15px");
-
-        $("#game_dev_block").css("margin","15px");
-        
-    }); 
-}
-
-function mouseOverAss() {
-    document.getElementById("assistive_technology_block").style.width = "30%";
-    document.getElementById("assistive_technology_block").style.height = "20%";
-    document.getElementById("assistive_technology_block").style.margin = "-10px";
-
-    document.getElementById("game_dev_block").style.marginLeft = "25px";
-    document.getElementById("game_dev_block").style.marginTop = "35px";
-}
-
-function mouseOutAss() {
-    jQuery(function($) {
-        $("#assistive_technology_block").css("width","25%");
-        $("#assistive_technology_block").css("height","15%");
-        $("#assistive_technology_block").css("margin","15px");
-
-        $("#game_dev_block").css("margin","15px");
-    }); 
-}
-
-function mouseOverGame() {
-    document.getElementById("game_dev_block").style.width = "30%";
-    document.getElementById("game_dev_block").style.height = "20%";
-    document.getElementById("game_dev_block").style.margin = "-10px";
-
-    document.getElementById("assistive_technology_block").style.marginLeft = "-5px";
-    document.getElementById("assistive_technology_block").style.marginTop = "-5px";
-
-    document.getElementById("mobile_apps_block").style.marginRight = "-50px";
-    document.getElementById("mobile_apps_block").style.marginTop = "-25px";
-}
-
-function mouseOutGame() {
-    jQuery(function($) {
-        $("#game_dev_block").css("width","25%");
-        $("#game_dev_block").css("height","15%");
-        $("#game_dev_block").css("margin","15px");
-
-        $("#assistive_technology_block").css("margin","15px");
-
-        $("#mobile_apps_block").css("margin","15px");
-    }); 
-}
 
 
 
 // Get the modal
-var modalAss = document.getElementById("myModalAssis");
-var modalMobile = document.getElementById("myModalMobile");
-var modalGame = document.getElementById("myModalGame");
+var proj1 = document.getElementById("myModal1");
+var proj2 = document.getElementById("myModal2");
+var proj3 = document.getElementById("myModal3");
+var proj4 = document.getElementById("myModal4");
+var proj5 = document.getElementById("myModal5");
+var proj6 = document.getElementById("myModal6");
+var proj7 = document.getElementById("myModal7");
+var proj8 = document.getElementById("myModal8");
 
 // Get the button that opens the modal
-var btnAss = document.getElementById("assistive_technology_block");
-var btnMobile = document.getElementById("mobile_apps_block");
-var btnGame = document.getElementById("game_dev_block");
+var proj1_button = document.getElementById("proj4_description");
+var proj2_button = document.getElementById("proj5_description");
+var proj3_button = document.getElementById("proj8_description");
+var proj4_button = document.getElementById("proj6_description");
+var proj5_button = document.getElementById("proj7_description");
+var proj6_button = document.getElementById("proj2_description");
+var proj7_button = document.getElementById("proj1_description");
+var proj8_button = document.getElementById("proj3_description");
+
+
 
 // Get the <span> element that closes the modal
-var spanAss = document.getElementsByClassName("closeAss")[0];
-var spanMobile = document.getElementsByClassName("closeMobile")[0];
-var spanGame = document.getElementsByClassName("closeGame")[0];
+var span0 = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
+var span3 = document.getElementsByClassName("close")[3];
+var span4 = document.getElementsByClassName("close")[4];
+var span5 = document.getElementsByClassName("close")[5];
+var span6 = document.getElementsByClassName("close")[6];
+var span7 = document.getElementsByClassName("close")[7];
 
-// When the user clicks the button, open the modal 
-btnAss.onclick = function() {
-    modalAss.style.display = "block";
+// When the user clicks on the button, open the modal
+proj1_button.onclick = function() {
+    proj1.style.display = "block";
 }
-btnMobile.onclick = function() {
-    modalMobile.style.display = "block";
+
+proj2_button.onclick = function() {
+    proj2.style.display = "block";
 }
-btnGame.onclick = function() {
-    modalGame.style.display = "block";
+
+proj3_button.onclick = function() {
+    proj3.style.display = "block";
+}
+
+proj4_button.onclick = function() {
+    proj4.style.display = "block";
+}
+
+proj5_button.onclick = function() {
+    proj5.style.display = "block";
+}
+
+proj6_button.onclick = function() {
+    proj6.style.display = "block";
+}
+
+proj7_button.onclick = function() {
+    proj7.style.display = "block";
+}
+
+proj8_button.onclick = function() {
+    proj8.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-spanAss.onclick = function() {
-    modalAss.style.display = "none";
+span0.onclick = function() {
+    proj1.style.display = "none";
 }
-spanMobile.onclick = function() {
-    modalMobile.style.display = "none";
+
+span1.onclick = function() {
+    proj2.style.display = "none";
 }
-spanGame.onclick = function() {
-    modalGame.style.display = "none";
+
+span2.onclick = function() {
+    proj3.style.display = "none";
+}
+
+span3.onclick = function() {
+    proj4.style.display = "none";
+}
+
+span4.onclick = function() {
+    proj5.style.display = "none";
+}
+
+span5.onclick = function() {
+    proj6.style.display = "none";
+}
+
+span6.onclick = function() {
+    proj7.style.display = "none";
+}
+
+span7.onclick = function() {
+    proj8.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modalAss) {
-        modalAss.style.display = "none";
+    if (event.target == proj1) {
+        proj1.style.display = "none";
     }
-    if (event.target == modalMobile) {
-        modalMobile.style.display = "none";
+    if (event.target == proj2) {
+        proj2.style.display = "none";
     }
-    if (event.target == modalGame) {
-        modalGame.style.display = "none";
+
+    if (event.target == proj3) {
+        proj3.style.display = "none";
+    }
+
+    if (event.target == proj4) {
+        proj4.style.display = "none";
+    }
+
+    if (event.target == proj5) {
+        proj5.style.display = "none";
+    }
+
+    if (event.target == proj6) {
+        proj6.style.display = "none";
+    }
+
+    if (event.target == proj7) {
+        proj7.style.display = "none";
+    }
+
+    if (event.target == proj8) {
+        proj8.style.display = "none";
     }
 }
-
-
-
 
 
 

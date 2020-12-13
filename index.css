@@ -21,7 +21,7 @@ body{
   width:100%;
   /* background-color: white; */
   background-color: rgb(111, 142, 164);
-  height:7%;
+  height:4vw;
   z-index:100;
   /* box-shadow: 0px 2px 3px rgb(165, 168, 168) ; */
 }
@@ -29,7 +29,7 @@ body{
 #menu_name{
   float: left;
   font-family:  'Nunito', sans-serif;
-  font-size: 25px;
+  font-size: 1.7vw;
   /* color: rgb(111, 142, 164); */
   color: white; 
   margin-left: 4.5%;
@@ -38,7 +38,7 @@ body{
 }
 
 #menu_button{
-  margin-top: 18px;
+  margin-top: 1.2vw;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -54,7 +54,7 @@ body{
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 10vw;
   box-shadow: 0px 8px 16px 0px rgba(70, 70, 70, 0.2);
   z-index: 1;
   transform: translate(-80%, 0%);
@@ -62,9 +62,10 @@ body{
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 0.5vw 0.5vw;
   text-decoration: none;
   display: block;
+  font-size: 1.2vw;
 }
 
 .menu_link{
@@ -81,7 +82,7 @@ body{
 #profile_pic{
   position: absolute;
   /* width: 15%; */
-  width: 200px;
+  width: 15%;
   padding-top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -99,13 +100,12 @@ body{
   position: relative;
   color: rgb(82, 83, 83);
   /* font-size: 5vw; */
-  font-size: 70px;
+  font-size: 4.5vw;
   width: fit-content;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
-  line-height: 80px;
   
 }
 
@@ -155,50 +155,58 @@ body{
   transform: translate(5%, 0%);
 }
 
+#exp_link{
+  margin-bottom: 10%;
+}
+
 #experience, #projects, #about{
   border-top: 0.5px solid rgb(208, 212, 212);
   color: rgb(79, 82, 82);
-  font-size: 40px;
+  font-size: 3vw;
   padding-bottom: 5%;
   font-family: 'Nunito', sans-serif;
 }
 
 #exp_title, #proj_title, #about_title{
-  margin-top: 3%;
+  margin-top: 6%;
+  /* text-align: center; */
 }
+
 
 .proj_title {
   margin-top: 2%;
   /* font-size: 2vw; */
-  font-size: 28px;
+  font-size: 2.2vw;
   color:  rgb(79, 82, 82);
   font-family: 'Nunito', sans-serif;
 }
 
-.proj_title:hover {
-  color:  rgb(220, 146, 54);
-}
 
 
 .descriptions{
-  font-size: 16px;
+  font-size: 1.2vw;
   font-family: 'Nunito', sans-serif;
   color:  rgb(135, 135, 138);
 }
 
 .extra_words{
   margin-top: 0px;
-  font-size:22px;
+  font-size:1.8vw;
   color:   rgb(111, 142, 164);
   /* color:   rgb(71, 96, 113); */
   /* color: rgb(255, 229, 132) */
 }
 
-.links{
+.links1{
   text-decoration: none;
   color:  rgb(79, 82, 82);
   margin-bottom: 0px;
   padding-bottom: 0px;
+}
+
+.links{
+  text-decoration: none;
+  color:  rgb(79, 82, 82);
 }
 
 .links:hover{
@@ -211,7 +219,7 @@ body{
 }
 .date{
   float:right;
-  font-size:15px;
+  font-size:1.5vw;
   color:  rgb(220, 146, 54);
 }
 
@@ -296,23 +304,119 @@ body{
 
 
 
-#projects_div{
-  /* outline-style: dashed;
-  outline-color: black; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 500px;
-  margin-top: 5%;
+
+
+
+
+
+/* __________________________ GRID body Stuff __________________________ */
+
+#projects {
+  height: fit-content;
+}
+
+
+.description{
+  color:  rgb(135, 138, 138);
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.proj {
+  background-color: black;
+}
+
+/* .proj_title:hover {
+  color:  rgb(220, 146, 54);
+} */
+
+
+
+
+
+.project1 { 
+  grid-area: one; 
+  background-image: url("Images/rudo.png");
+  background-size: 100% auto;
+}
+.project2 { 
+  grid-area: two; 
+  background-image: url("Images/mines.png");
+  background-size: 100% auto;
+}
+.project3 {
+  grid-area: three; 
+  background-image: url("Images/snake.png");
+  background-size: auto 100%;
+}
+.project4 { 
+  grid-area: four; 
+  background-image: url("Images/tac.png");
+  background-size: 100% auto;
+}
+.project5 { 
+  grid-area: five; 
+  background-image: url("Images/grow.png");
+  background-size: 100% auto;
+}
+.project6 { 
+  grid-area: six;
+  background-image: url("Images/sero.png");
+  background-size: 100% auto;
+ }
+.project7 { 
+  grid-area: seven; 
+  background-image: url("Images/watch.png");
+  background-size: auto 100%;
+}
+.project8 { 
+  grid-area: eight;
+  background-image: url("Images/spoon.png");
+  background-size: 100% auto;
+ }
+
+
+
+.grid-container {
+  width: 100%;
+  margin-top: 0;
+  /* border-style: dashed;
+  border-color: black; */
+  
+
+  display: grid;
+  grid-template-areas:
+    'one one       two two   three three   four four        '
+    'five five     six six   seven seven   eight eight    '
+    ;
+  grid-gap: 3%;
+
+
+  margin-top: 3%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+}
+
+
+.word{
+  font-size: 1.7vw;
+  padding: 35%;
+  text-align: center;
+  opacity: 0;
+  color: white;
 }
 
 
 
-
-
-
-
+.grid-container > div:hover .word {
+  background-color: rgb(111, 142, 164);
+  transition: .4s ease;
+  opacity: 1;
+}
 
 
 
@@ -365,8 +469,9 @@ body{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  z-index: 200; /* Sit on top */
+  padding-top: 7%; /*Location of the box*/
+
   left: 0;
   top:0;
   width: 100%; /* Full width */
@@ -380,24 +485,24 @@ body{
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-top: 1.3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
   border: 1px solid #888;
-  width: 80%;
-  border-radius: 10px;
+  width: 60vw;
+  border-radius: 0.7vw;
 }
 
 /* The Close Button */
-.closeAss, .closeMobile, .closeGame {
+.close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.closeAss:hover,
+.close:hover,
 .closeAss:focus,
 .closeMobile:hover,
 .closeMobile:focus,
@@ -413,6 +518,84 @@ body{
   font-size: 28px;
 }
 
+#images_modal{
+  position: absolute;
+  width: fit-content;
+}
+
+#phone1, #rudo1, #min1{
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  float: left;
+}
+
+#phone2, #rudo2, #min2{
+  margin-right: 10%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  float: right;
+}
+
+#phone1, #phone2{
+  width: 25%;
+}
+
+#phone1{
+  margin-left: 20%;
+}
+
+#phone2{
+  margin-right: 20%;
+}
+
+#rudo1, #rudo2, #min1, #min2{
+  width: 38%;
+}
+
+#snake1{
+  display: block;
+  width: 80%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tac1{
+  float: left;
+  width: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 7%;
+}
+
+#tac2{
+  float: right;
+  width: 49%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-right: 7%;
+}
+
+#watch1{
+  width: 60%;
+  float: left;
+  margin-left: 5%;
+}
+
+#watch2{
+  width:25%;
+  float: right;
+  margin-right: 5%;
+}
+
+#spoon{
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 

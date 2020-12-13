@@ -14,10 +14,11 @@
 
 	<body>
 		<a name="home"></a>
+		
 		<div id="menu">
 			<div id="menu_name">michelle loven</div>
 			<div class="dropdown">
-				<img id='menu_button' src="Images/menu_button.png" style="width:25px;height:20px;" alt="GitHub">
+				<img id='menu_button' src="Images/menu_button.png" style="width:2vw;height:1.5vw;" alt="GitHub">
 				<div class="dropdown-content">
 					<a class='menu_link' href="#home">Home</a>
 					<a class='menu_link' href="#experience">Experience</a>
@@ -51,6 +52,8 @@
   
 			</div>
 
+			
+
 			<a name="experience"></a>
 			<div id="web_body">
 				<div id='experience'>
@@ -74,7 +77,7 @@
 					</div>
 					<div class= "proj_title">
 						<div class="parent">
-							<a class="links exp_date" href="Images/robotics.pdf">Automation in Robotics Researcher </a>
+							<a class="links1 exp_date" href="Images/robotics.pdf">Automation in Robotics Researcher </a>
 							<div class="date">Jan 2019- Oct 2019</div>
 						</div>
 						<div class="extra_words">Cornell University </div>
@@ -108,17 +111,77 @@
 					<div id="proj_title">
 						PROJECTS
 					</div>
-					<div id = "projects_div" >
-						<div id ="mobile_apps_block" onmouseover="mouseOverMobile()" onmouseout="mouseOutMobile()" class="button_proj ">
-							mobile<br>applications
-						</div>
-						<div id ="assistive_technology_block"  onmouseover="mouseOverAss()" onmouseout="mouseOutAss()" class="button_proj ">
-							assistive<br>technology
+					
+					<div id = "projects_div" class="grid-container" >
+						
+						<div class= "proj proj_title project1" id="proj4_description">
+							<div class="word">
+									perudo
+							</div>
 						</div>
 						
-						<div id ="game_dev_block"  onmouseover="mouseOverGame()" onmouseout="mouseOutGame()" class="button_proj">
-							game<br>development
+						<div class= "proj proj_title project2" id="proj5_description">
+							<!-- <a class="links" href="https://github.com/Mishka2/"> -->
+								<div class="word">
+									mines
+								</div>
+							</a>
 						</div>
+
+
+						<div class= "proj proj_title project3" id="proj8_description">
+							
+							<!-- <a class="links" href="https://github.com/Mishka2/"> -->
+								<div class="word">
+									snake
+								</div>
+							</a>
+						</div>
+						
+						<div class= "proj proj_title project4" id="proj6_description">
+							
+							<!-- <a class="links" href="https://github.com/Mishka2/"> -->
+								<div class="word">
+									tac
+								</div>
+							</a>
+						</div>
+
+
+						<div class= "proj proj_title project5" id="proj7_description" >
+							
+							<!-- <a class="links" href="growpotential.html"> -->
+								<div class="word">
+									grow
+								</div>
+							</a>
+						</div>
+
+						<div class= "proj proj_title project6" id="proj2_description">
+							
+							<!-- <a class="links" href="https://github.com/Mishka2/safe_driving_application"> -->
+								<div class="word">
+									sero
+								</div>
+							</a>
+							
+						</div>
+
+						<div class= "proj proj_title project7" id="proj1_description">
+							
+							<div class="word">
+								watch
+							</div>
+						</div>
+	
+						<div class= " proj proj_title project8" id="proj3_description">
+							
+							<div class="word">
+								spoon
+							</div>
+						</div>
+
+
 					</div>
 					
 				</div>
@@ -138,7 +201,7 @@
 					<div class= "proj_title" id="about2_description">
 						<a class="links" href="art.html">art</a>
 						<div class="descriptions">
-							Water colors and acrylics.
+							Check out my water colors and acrylics!
 						</div>
 					</div>
 				</div>
@@ -148,14 +211,138 @@
 
 			</div>
 
-			<!-- The Modal for assistive technology -->
-			<div id="myModalAssis" class="modal">
+
+
+			<!-- The Modal for proj1  -->
+			<div id="myModal1" class="modal">
 
 				<!-- Modal content -->
 				<div class="modal-content">
-				<span class="closeAss">&times;</span>
-					<div class= "proj_title" id="proj1_description">
-						<a class="links" href="https://github.com/Mishka2/vibrating_watch">vibrating watch for the visually impaired</a>
+				<span class="close">&times;</span>
+					<a class="proj_title links" href="https://github.com/Mishka2/online_multiplayer_liars_dice">online multiplayer liar's dice game</a> 
+						<div class="descriptions">
+							Designed and implemented frontend and backend for online multiplayer game of Liar's Dice.
+						</div>
+						
+						<div class="images_modal">
+							<img src="Images/rudo.png" id="rudo1">
+							<img src="Images/rudo_dark.png" id="rudo2">
+							<div style="clear: both;"></div>
+						</div>
+
+
+				</div>
+			
+			</div>
+
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal2" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<a class="proj_title links" href="https://github.com/Mishka2/">minesweeper game to play on terminal</a>
+						<div class="descriptions">
+							Developed minesweeper game that use terminal text as user interface. (Python)
+						</div>
+
+						<div class="images_modal">
+							<img src="Images/mine2.png" id="min1">
+							<img src="Images/mines.png" id="min2">
+							<div style="clear: both;"></div>
+						</div>
+				</div>
+			
+			</div>
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal3" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<a class="proj_title links" href="https://github.com/Mishka2/">snake game to play on terminal</a>
+						<div class="descriptions">
+							Developed a snake game that uses terminal text as user interface. (Python)
+						</div>
+						
+				</div>
+			
+			</div>
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal4" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<a class="proj_title links" href="https://github.com/Mishka2/">unbeatable tic-tac-toe game</a>
+						<div class="descriptions">
+							Developed an Unbeatable Tic-Tac-Toe game. (Java)
+						</div>
+
+						<div class="images_modal">
+							<img src="Images/tac.png" id="tac1">
+							<img src="Images/lose.png" id="tac2">
+							<div style="clear: both;"></div>
+						</div>
+				</div>
+			
+			</div>
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal5" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<!-- <a class="proj_title links" href="growpotential.html">android app for GrowPotential</a> -->
+					<div class="proj_title">
+						android app for GrowPotential
+					</div>
+					
+						<div class="descriptions">
+							Developed Android app that reads information from a server and displays updates from watering system.
+						</div>
+						
+						<div class="images_modal">
+							<img src="Images/phone5.png" id="phone1">
+							<img src="Images/phone1.png" id="phone2">
+							<div style="clear: both;"></div>
+						</div>
+				</div>
+			
+			</div>
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal6" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<a class="proj_title links" href="https://github.com/Mishka2/safe_driving_application">android app to discourage texting while driving</a>
+						<div class="descriptions">
+							Developed app that sends drivers’ estimated arrival time to certain contacts via SMS.
+							
+						</div>
+
+						<div class="images_modal">
+							<img src="Images/home_screen.png" id="phone1">
+							<img src="Images/start.png" id="phone2">
+							<div style="clear: both;"></div>
+						</div>
+				</div>
+			
+			</div>
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal7" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<a class="links proj_title" href="https://github.com/Mishka2/vibrating_watch">vibrating watch for the visually impaired</a>
 						<div class="descriptions">
 							<ul>
 								<li>Programmed and tested novel vibration patterns for accuracy of user perception. <br></li>
@@ -163,74 +350,40 @@
 								<li>Presented at Intel International Science and Engineering Fair. <br></li>
 							</ul>
 						</div>
-					</div>
 
-					<div class= "proj_title" id="proj3_description">
+						<div class="images_modal">
+							<img src="Images/watch_wiring.png" id="watch1">
+							<img src="Images/cad_watch.png" id="watch2">
+							<div style="clear: both;"></div>
+						</div>
+				</div>
+			
+			</div>
+
+			<!-- The Modal for proj2  -->
+			<div id="myModal8" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<div class="proj_title">
 						self balancing spoon
+					</div>
 						<div class="descriptions">
 							Designed and 3D printed a spoon to maintain single axis rotational stability for people with limited wrist mobility.
 							
 						</div>
-					</div>
+
+						<img src="Images/rotating_spoon.png" id="spoon">
 				</div>
 			
 			</div>
 
-			<!-- The Modal for mobile apps  -->
-			<div id="myModalMobile" class="modal">
-
-				<!-- Modal content -->
-				<div class="modal-content">
-				<span class="closeMobile">&times;</span>
-
-					<div class= "proj_title" id="proj7_description">
-						<a class="links" href="growpotential.html">android app for GrowPotential</a>
-						<div class="descriptions">
-							Developed Android app that reads information from a server and displays updates from watering system.
-							
-						</div>
-					</div>
-					<div class= "proj_title" id="proj2_description">
-						<a class="links" href="https://github.com/Mishka2/safe_driving_application">android app to discourage texting while driving</a>
-						<div class="descriptions">
-							Developed app that sends drivers’ estimated arrival time to certain contacts via SMS.
-							
-						</div>
-					</div>
-
-
-				</div>
 			
-			</div>
 
-			<!-- The Modal for game dev -->
-			<div id="myModalGame" class="modal">
-
-				<!-- Modal content -->
-				<div class="modal-content">
-				<span class="closeGame">&times;</span>
-					<div class= "proj_title" id="proj4_description">
-						<a class="links" href="https://github.com/Mishka2/online_multiplayer_liars_dice">online multiplayer liar's dice game</a>
-						<div class="descriptions">
-							Designed and implemented frontend and backend for online multiplayer game of Liar's Dice.
-						</div>
-					</div>
-					
-					<div class= "proj_title" id="proj5_description">
-						<a class="links" href="https://github.com/Mishka2/">snake and minesweeper games to play on terminal</a>
-						<div class="descriptions">
-							Developed fun games that use terminal text as user interface. (Python)
-						</div>
-					</div>
-					<div class= "proj_title" id="proj6_description">
-						<a class="links" href="https://github.com/Mishka2/">unbeatable tic-tac-toe game</a>
-						<div class="descriptions">
-							Developed an Unbeatable Tic-Tac-Toe game. (Java)
-						</div>
-					</div>
-				</div>
 			
-			</div>
+
+			
 
 
 
@@ -258,7 +411,8 @@
 
   </body>
 
-	</html>
+</html>
+
 
 
 
