@@ -103,7 +103,7 @@ span_robot.onclick = function() {
     robot_modal.style.display = "none";
 }
 
-span_robot.onclick = function() {
+span_wpi.onclick = function() {
     wpi_modal.style.display = "none";
 }
 
