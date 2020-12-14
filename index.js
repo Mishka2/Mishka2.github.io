@@ -77,9 +77,9 @@ var robot = document.getElementById("exp2_description");
 var wpi = document.getElementById("exp3_description");
 
 // Get the <span> element that closes the modal
-var span_asml = document.getElementsByClassName("close1");
-var span_robot = document.getElementsByClassName("close2");
-var span_wpi = document.getElementsByClassName("close3");
+var span_asml = document.getElementsByClassName("close1")[0];
+var span_robot = document.getElementsByClassName("close2")[0];
+var span_wpi = document.getElementsByClassName("close3")[0];
 
 // When the user clicks on the button, open the modal
 asml.onclick = function() {

@@ -494,7 +494,7 @@ body{
   padding-top: 1.3vw;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-bottom: 2vw;
+  padding-bottom: 4vw;
   border: 1px solid #888;
   width: 60vw;
   border-radius: 0.7vw;
@@ -515,7 +515,7 @@ body{
 .close:focus,
 .close1:focus,
 .close2:focus,
-.close3:focus,
+.close3:focus
  {
   color: rgb(220, 146, 54);
   text-decoration: none;
