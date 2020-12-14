@@ -204,9 +204,15 @@ body{
   padding-bottom: 0px;
 }
 
+
 .links{
   text-decoration: none;
   color:  rgb(79, 82, 82);
+}
+
+.links1:hover{
+  text-decoration: none;
+  color:  rgb(220, 146, 54);
 }
 
 .links:hover{
@@ -495,19 +501,21 @@ body{
 }
 
 /* The Close Button */
-.close {
+.close, .close1, .close2, .close3 {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 2.2vw;
   font-weight: bold;
 }
 
 .close:hover,
-.closeAss:focus,
-.closeMobile:hover,
-.closeMobile:focus,
-.closeGame:hover,
-.closeGame:focus
+.close1:hover,
+.close2:hover,
+.close3:hover,
+.close:focus,
+.close1:focus,
+.close2:focus,
+.close3:focus,
  {
   color: rgb(220, 146, 54);
   text-decoration: none;
@@ -592,11 +600,43 @@ body{
 
 #spoon{
   display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#asml{
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+#robot{
+  margin-top: 2%;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wpi{
+  margin-top: 2%;
+  display: block;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
 
+#nolink{
+  padding-top: 0px;
+  margin-top: 0px;
+  line-height: 0;
+  margin-bottom: 3%;
+  padding-bottom: 0px;
+  
+}
 
 
 /* __________________________ Footer stuff __________________________ */

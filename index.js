@@ -64,6 +64,53 @@ var span5 = document.getElementsByClassName("close")[5];
 var span6 = document.getElementsByClassName("close")[6];
 var span7 = document.getElementsByClassName("close")[7];
 
+
+
+// Get the modal
+var asml_modal = document.getElementById("asml_modal");
+var robot_modal = document.getElementById("robot_modal");
+var wpi_modal = document.getElementById("wpi_modal");
+
+// Get the button that opens the modal
+var asml = document.getElementById("exp1_description");
+var robot = document.getElementById("exp2_description");
+var wpi = document.getElementById("exp3_description");
+
+// Get the <span> element that closes the modal
+var span_asml = document.getElementsByClassName("close1");
+var span_robot = document.getElementsByClassName("close2");
+var span_wpi = document.getElementsByClassName("close3");
+
+// When the user clicks on the button, open the modal
+asml.onclick = function() {
+    asml_modal.style.display = "block";
+}
+
+robot.onclick = function() {
+    robot_modal.style.display = "block";
+}
+
+wpi.onclick = function() {
+    wpi_modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_asml.onclick = function() {
+    asml_modal.style.display = "none";
+}
+
+span_robot.onclick = function() {
+    robot_modal.style.display = "none";
+}
+
+span_robot.onclick = function() {
+    wpi_modal.style.display = "none";
+}
+
+
+
+
+
 // When the user clicks on the button, open the modal
 proj1_button.onclick = function() {
     proj1.style.display = "block";
@@ -162,8 +209,19 @@ window.onclick = function(event) {
     if (event.target == proj8) {
         proj8.style.display = "none";
     }
-}
 
+    if (event.target == asml_modal) {
+        asml_modal.style.display = "none";
+    }
+
+    if (event.target == robot_modal) {
+        robot_modal.style.display = "none";
+    }
+
+    if (event.target == wpi_modal) {
+        wpi_modal.style.display = "none";
+    }
+}
 
 
 
