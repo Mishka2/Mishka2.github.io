@@ -15,7 +15,7 @@ function grow_tomato(){
     if (curr_tomato_level == 0){
         tomato.style.visibility = "visible";
     } else {
-        if (curr_tomato_width >= 90){
+        if (curr_tomato_width >= 120){
             //reset
             curr_tomato_level = -1;
             curr_tomato_width= 20;
@@ -27,7 +27,7 @@ function grow_tomato(){
             tomato_holder.style.top = new_top;
             tomato_holder.style.left = new_left;
         }
-        else if (curr_tomato_width >= 60){
+        else if (curr_tomato_width >= 80){
             tomato.src="red.png";
         }
 
