@@ -18,16 +18,26 @@ function grow_tomato(){
     if (curr_tomato_level == 0){
         tomato.style.visibility = "visible";
     } else {
-        if (curr_tomato_width >= 120){
+        if (curr_tomato_width >= 140){
             reset_tomato();
         }
+        else if (curr_tomato_width >= 130){
+            tomato.src="red3.png";
+        }
+        else if (curr_tomato_width >= 120){
+            tomato.src="red2.png";
+        }
+        else if (curr_tomato_width >= 110){
+            tomato.src="red1.png";
+        }
         else if (curr_tomato_width >= 80){
-            console.log("level: " + curr_tomato_level)
             tomato.src="red.png";
         }
         else if (curr_tomato_width >= 30){
             tomato.src="green.png";
         }
+        
+        
 
         curr_tomato_width = curr_tomato_width + increment;
         var new_width = curr_tomato_width.toString(10) + "%";
