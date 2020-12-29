@@ -55,6 +55,12 @@
     transform: translate(-50%, -400% );
 }
 
+.pot{
+    position: absolute;
+    width: 200px;
+    transform: translate(50%, -100% );
+}
+
 body{
     background-color: black;
     touch-action: manipulation;

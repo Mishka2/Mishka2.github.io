@@ -3,15 +3,18 @@
     <head>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body  onload="startGame()">
 
         <div class="parent">
-            <img class=plant id= "plant" src="plant.png" onclick="startGame()" >
-            <div class=tomato_holder id=tomato_holder>
-                <img class=tomato id= "tomato" src="green.png" onclick="startGame()" >
+            <img class=plant id= "plant" src="plant.png"  >
+            <div class=tomato_holder id=tomato_holder onclick="clickedTomato()">
+                <img class=tomato id= "tomato" src="flower.png">
             </div>
             <div id=description>
-                tap the plant to grow tomatoes
+                tap red tomatoes
+                <div id=score>
+                    score: 10
+                </div>
             </div>
         </div>
 
