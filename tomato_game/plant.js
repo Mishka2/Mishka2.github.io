@@ -6,7 +6,7 @@ var increment = 1;
 var min_left = 20;
 
 function startGame(){
-    setInterval(grow_tomato, 50);
+    setInterval(grow_tomato, 40);
     // grow_tomato();
 }
 
